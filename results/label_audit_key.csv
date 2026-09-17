@@ -1,0 +1,197 @@
+audit_id,example_id,parser_correct,parser_answer,parser_confidence,run_dir
+audit_001,bench_00148,False,14,1.0,data\runs\bench_00148_20260310_082928
+audit_002,bench_00048,True,12,1.0,data\runs\bench_00048_20260310_082557
+audit_003,bench_00061,True,20,1.0,data\runs\bench_00061_20260310_082625
+audit_004,bench_00114,True,48,1.0,data\runs\bench_00114_20260310_082817
+audit_005,bench_00144,True,3,1.0,data\runs\bench_00144_20260310_082920
+audit_006,bench_00010,False,5,1.0,data\runs\bench_00010_20260310_082437
+audit_007,bench_00117,False,10,1.0,data\runs\bench_00117_20260310_082823
+audit_008,bench_00033,False,9,1.0,data\runs\bench_00033_20260310_082525
+audit_009,bench_00106,False,39,1.0,data\runs\bench_00106_20260310_082800
+audit_010,bench_00090,True,27,1.0,data\runs\bench_00090_20260310_082726
+audit_011,bench_00111,False,10,1.0,data\runs\bench_00111_20260310_082811
+audit_012,bench_00062,False,3,1.0,data\runs\bench_00062_20260310_082627
+audit_013,bench_00123,True,7,1.0,data\runs\bench_00123_20260310_082836
+audit_014,bench_00046,False,7,1.0,data\runs\bench_00046_20260310_082553
+audit_015,bench_00137,True,6,1.0,data\runs\bench_00137_20260310_082905
+audit_016,bench_00138,True,8,1.0,data\runs\bench_00138_20260310_082907
+audit_017,bench_00030,True,17,1.0,data\runs\bench_00030_20260310_082519
+audit_018,bench_00036,True,10,1.0,data\runs\bench_00036_20260310_082532
+audit_019,bench_00002,False,10,1.0,data\runs\bench_00002_20260310_082419
+audit_020,bench_00130,False,9,1.0,data\runs\bench_00130_20260310_082850
+audit_021,bench_00081,False,10,1.0,data\runs\bench_00081_20260310_082708
+audit_022,bench_00096,True,16,1.0,data\runs\bench_00096_20260310_082739
+audit_023,bench_00079,True,35,1.0,data\runs\bench_00079_20260310_082703
+audit_024,bench_00027,False,8,1.0,data\runs\bench_00027_20260310_082513
+audit_025,bench_00055,True,15,1.0,data\runs\bench_00055_20260310_082612
+audit_026,bench_00986,True,no,1.0,data\runs\bench_00986_20260310_085912
+audit_027,bench_00997,False,"Explain.
+
+A 1.00-kg block is resting against a lig",0.5,data\runs\bench_00997_20260310_085936
+audit_028,bench_00976,True,no,1.0,data\runs\bench_00976_20260310_085851
+audit_029,bench_00905,False,no,1.0,data\runs\bench_00905_20260310_085619
+audit_030,bench_00985,False,"Explain.
+
+A 100-W lightbulb is placed in a cylinde",0.5,data\runs\bench_00985_20260310_085910
+audit_031,bench_00991,True,no,1.0,data\runs\bench_00991_20260310_085923
+audit_032,bench_01000,True,no,1.0,data\runs\bench_01000_20260310_085943
+audit_033,bench_01002,False,"Explain.
+
+A $1.00-\mathrm{kg}$ block of copper at ",0.5,data\runs\bench_01002_20260310_085947
+audit_034,bench_00971,True,no,1.0,data\runs\bench_00971_20260310_085841
+audit_035,bench_01001,True,no,1.0,data\runs\bench_01001_20260310_085945
+audit_036,bench_00982,True,no,1.0,data\runs\bench_00982_20260310_085904
+audit_037,bench_00937,False,"Explain.
+
+A 1.00-kg block of copper at $20.0^{\cir",0.5,data\runs\bench_00937_20260310_085728
+audit_038,bench_00911,False,no,1.0,data\runs\bench_00911_20260310_085632
+audit_039,bench_00920,False,no,1.0,data\runs\bench_00920_20260310_085651
+audit_040,bench_00965,True,no,1.0,data\runs\bench_00965_20260310_085828
+audit_041,bench_00932,False,"Explain.
+
+A 1.00-kg block of copper at $20.0^{\cir",0.5,data\runs\bench_00932_20260310_085717
+audit_042,bench_01005,True,no,1.0,data\runs\bench_01005_20260310_085954
+audit_043,bench_00940,False,no,1.0,data\runs\bench_00940_20260310_085734
+audit_044,bench_00955,False,no,1.0,data\runs\bench_00955_20260310_085806
+audit_045,bench_00897,False,"Explain.
+
+A $1.00-\mathrm{kg}$ block of copper at ",0.5,data\runs\bench_00897_20260310_085602
+audit_046,bench_00995,True,no,1.0,data\runs\bench_00995_20260310_085932
+audit_047,bench_01012,True,no,1.0,data\runs\bench_01012_20260310_090008
+audit_048,bench_00975,True,no,1.0,data\runs\bench_00975_20260310_085849
+audit_049,bench_00981,True,no,1.0,data\runs\bench_00981_20260310_085902
+audit_050,bench_00977,False,"Explain.
+
+The following table shows the number of ",0.5,data\runs\bench_00977_20260310_085853
+audit_051,bench_00165,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00165_20260310_083003
+audit_052,bench_00174,True,15,1.0,data\runs\bench_00174_20260310_083022
+audit_053,bench_00207,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00207_20260310_083131
+audit_054,bench_00243,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00243_20260310_083246
+audit_055,bench_00241,True,24,1.0,data\runs\bench_00241_20260310_083242
+audit_056,bench_00171,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00171_20260310_083016
+audit_057,bench_00256,False,3,1.0,data\runs\bench_00256_20260310_083318
+audit_058,bench_00203,True,12,1.0,data\runs\bench_00203_20260310_083123
+audit_059,bench_00261,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00261_20260310_083330
+audit_060,bench_00232,False,1,1.0,data\runs\bench_00232_20260310_083223
+audit_061,bench_00230,True,17,1.0,data\runs\bench_00230_20260310_083219
+audit_062,bench_00212,True,14,1.0,data\runs\bench_00212_20260310_083142
+audit_063,bench_00214,False,2,1.0,data\runs\bench_00214_20260310_083146
+audit_064,bench_00265,True,42,1.0,data\runs\bench_00265_20260310_083340
+audit_065,bench_00169,True,12,1.0,data\runs\bench_00169_20260310_083012
+audit_066,bench_00188,True,11,1.0,data\runs\bench_00188_20260310_083051
+audit_067,bench_00252,True,27,1.0,data\runs\bench_00252_20260310_083308
+audit_068,bench_00217,True,17,1.0,data\runs\bench_00217_20260310_083152
+audit_069,bench_00157,True,14,1.0,data\runs\bench_00157_20260310_082947
+audit_070,bench_00263,True,40,1.0,data\runs\bench_00263_20260310_083335
+audit_071,bench_00251,True,30,1.0,data\runs\bench_00251_20260310_083305
+audit_072,bench_00227,False,11,1.0,data\runs\bench_00227_20260310_083213
+audit_073,bench_00184,False,12,1.0,data\runs\bench_00184_20260310_083043
+audit_074,bench_00160,False,1,1.0,data\runs\bench_00160_20260310_082953
+audit_075,bench_00153,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00153_20260310_082938
+audit_076,bench_00564,True,sam,1.0,data\runs\bench_00564_20260310_084420
+audit_077,bench_00701,False,kate,1.0,data\runs\bench_00701_20260310_084911
+audit_078,bench_00546,True,jack,1.0,data\runs\bench_00546_20260310_084342
+audit_079,bench_00708,False,dan,1.0,data\runs\bench_00708_20260310_084926
+audit_080,bench_00467,False,i,1.0,data\runs\bench_00467_20260310_084053
+audit_081,bench_00670,False,the,1.0,data\runs\bench_00670_20260310_084805
+audit_082,bench_00525,False,xena,1.0,data\runs\bench_00525_20260310_084258
+audit_083,bench_00605,True,paul,1.0,data\runs\bench_00605_20260310_084547
+audit_084,bench_00635,False,hank,1.0,data\runs\bench_00635_20260310_084651
+audit_085,bench_00599,False,noah,1.0,data\runs\bench_00599_20260310_084535
+audit_086,bench_00477,False,xena,1.0,data\runs\bench_00477_20260310_084115
+audit_087,bench_00446,True,grace,1.0,data\runs\bench_00446_20260310_084008
+audit_088,bench_00620,True,vera,1.0,data\runs\bench_00620_20260310_084619
+audit_089,bench_00603,True,mia,1.0,data\runs\bench_00603_20260310_084543
+audit_090,bench_00459,True,mia,1.0,data\runs\bench_00459_20260310_084036
+audit_091,bench_00514,True,sam,1.0,data\runs\bench_00514_20260310_084234
+audit_092,bench_00506,True,mia,1.0,data\runs\bench_00506_20260310_084217
+audit_093,bench_00699,False,hank,1.0,data\runs\bench_00699_20260310_084907
+audit_094,bench_00431,True,alice,1.0,data\runs\bench_00431_20260310_083936
+audit_095,bench_00531,True,alice,1.0,data\runs\bench_00531_20260310_084310
+audit_096,bench_00495,True,grace,1.0,data\runs\bench_00495_20260310_084154
+audit_097,bench_00569,False,i,1.0,data\runs\bench_00569_20260310_084430
+audit_098,bench_00711,False,hank,1.0,data\runs\bench_00711_20260310_084932
+audit_099,bench_00586,False,i,1.0,data\runs\bench_00586_20260310_084506
+audit_100,bench_00632,True,dan,1.0,data\runs\bench_00632_20260310_084644
+audit_101,bench_00787,False,no,1.0,data\runs\bench_00787_20260310_085211
+audit_102,bench_00739,True,yes,1.0,data\runs\bench_00739_20260310_085031
+audit_103,bench_00888,True,no,1.0,data\runs\bench_00888_20260310_085543
+audit_104,bench_00778,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00778_20260310_085152
+audit_105,bench_00748,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00748_20260310_085050
+audit_106,bench_00757,True,yes,1.0,data\runs\bench_00757_20260310_085109
+audit_107,bench_00829,False,no,1.0,data\runs\bench_00829_20260310_085338
+audit_108,bench_00772,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00772_20260310_085140
+audit_109,bench_00805,False,no,1.0,data\runs\bench_00805_20260310_085249
+audit_110,bench_00868,True,no,1.0,data\runs\bench_00868_20260310_085500
+audit_111,bench_00864,False,"[User 0001]
+
+I'm not sure if this is a good questi",0.5,data\runs\bench_00864_20260310_085452
+audit_112,bench_00832,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00832_20260310_085344
+audit_113,bench_00856,True,no,1.0,data\runs\bench_00856_20260310_085434
+audit_114,bench_00880,True,no,1.0,data\runs\bench_00880_20260310_085526
+audit_115,bench_00742,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00742_20260310_085037
+audit_116,bench_00844,False,"[User 0001]
+
+I'm not sure if this is the right pla",0.5,data\runs\bench_00844_20260310_085409
+audit_117,bench_00872,True,no,1.0,data\runs\bench_00872_20260310_085509
+audit_118,bench_00876,True,no,1.0,data\runs\bench_00876_20260310_085517
+audit_119,bench_00852,True,no,1.0,data\runs\bench_00852_20260310_085426
+audit_120,bench_00733,True,yes,1.0,data\runs\bench_00733_20260310_085019
+audit_121,bench_00736,False,"All dogs are mammals. Are dogs mammals?
+
+All dogs ",0.5,data\runs\bench_00736_20260310_085025
+audit_122,bench_00763,False,no,1.0,data\runs\bench_00763_20260310_085121
+audit_123,bench_00766,False,"[User 0001]
+
+I'm not sure if this is a good questi",0.5,data\runs\bench_00766_20260310_085127
+audit_124,bench_00884,False,"Explain.
+
+A 100-kg mass is pulled along a friction",0.5,data\runs\bench_00884_20260310_085534
+audit_125,bench_00817,False,no,1.0,data\runs\bench_00817_20260310_085313
+audit_126,bench_00325,True,wise,1.0,data\runs\bench_00325_20260310_083550
+audit_127,bench_00386,True,migratory,1.0,data\runs\bench_00386_20260310_083800
+audit_128,bench_00273,False,luna,1.0,data\runs\bench_00273_20260310_083358
+audit_129,bench_00408,False,an,1.0,data\runs\bench_00408_20260310_083847
+audit_130,bench_00392,False,a,1.0,data\runs\bench_00392_20260310_083812
+audit_131,bench_00365,False,a,1.0,data\runs\bench_00365_20260310_083715
+audit_132,bench_00371,True,pollinator,1.0,data\runs\bench_00371_20260310_083727
+audit_133,bench_00420,False,a,1.0,data\runs\bench_00420_20260310_083912
+audit_134,bench_00375,True,reptile,1.0,data\runs\bench_00375_20260310_083736
+audit_135,bench_00395,True,plant,1.0,data\runs\bench_00395_20260310_083819
+audit_136,bench_00292,True,loyal,1.0,data\runs\bench_00292_20260310_083440
+audit_137,bench_00362,True,hardworking,1.0,data\runs\bench_00362_20260310_083708
+audit_138,bench_00405,True,aquatic,1.0,data\runs\bench_00405_20260310_083840
+audit_139,bench_00382,True,amphibian,1.0,data\runs\bench_00382_20260310_083751
+audit_140,bench_00396,False,a,1.0,data\runs\bench_00396_20260310_083821
+audit_141,bench_00358,True,marine,1.0,data\runs\bench_00358_20260310_083659
+audit_142,bench_00428,False,a,1.0,data\runs\bench_00428_20260310_083929
+audit_143,bench_00285,False,nemo,1.0,data\runs\bench_00285_20260310_083425
+audit_144,bench_00381,False,kermit,1.0,data\runs\bench_00381_20260310_083749
+audit_145,bench_00429,True,marine,1.0,data\runs\bench_00429_20260310_083931
+audit_146,bench_00313,True,strong,1.0,data\runs\bench_00313_20260310_083525
+audit_147,bench_00387,False,explanation,1.0,data\runs\bench_00387_20260310_083802
+audit_148,bench_00303,False,explanation,1.0,data\runs\bench_00303_20260310_083503
+audit_149,bench_00296,True,flower,1.0,data\runs\bench_00296_20260310_083448
+audit_150,bench_00369,False,explanation,1.0,data\runs\bench_00369_20260310_083723

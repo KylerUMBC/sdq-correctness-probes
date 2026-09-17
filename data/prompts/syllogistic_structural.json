@@ -1,0 +1,423 @@
+{
+  "stage": "2A.3",
+  "task": "syllogistic_structural",
+  "description": "Structural inference types with shared entities. Groups differ by logical structure (valid/invalid, premise order, framing). Forms share the same entities across groups, making negative pairs maximally hard.",
+  "groups": [
+    {
+      "group_id": "mp",
+      "description": "Valid modus ponens: All A are B, X is A, therefore X is B",
+      "validity": "valid",
+      "matched_pair": "ac",
+      "prompts": [
+        {
+          "id": "s2a3_mp_cats_animals",
+          "text": "All cats are animals. Whiskers is a cat. Therefore, Whiskers is an animal.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_mp_eagles_birds",
+          "text": "All eagles are birds. Shadow is an eagle. Therefore, Shadow is a bird.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_mp_dogs_mammals",
+          "text": "All dogs are mammals. Rex is a dog. Therefore, Rex is a mammal.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_mp_salmon_fish",
+          "text": "All salmon are fish. Silver is a salmon. Therefore, Silver is a fish.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_mp_roses_flowers",
+          "text": "All roses are flowers. Petal is a rose. Therefore, Petal is a flower.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_mp_oaks_trees",
+          "text": "All oaks are trees. Timber is an oak. Therefore, Timber is a tree.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "ac",
+      "description": "Invalid affirming consequent: All A are B, X is B, therefore X is A",
+      "validity": "invalid",
+      "matched_pair": "mp",
+      "prompts": [
+        {
+          "id": "s2a3_ac_cats_animals",
+          "text": "All cats are animals. Whiskers is an animal. Therefore, Whiskers is a cat.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_ac_eagles_birds",
+          "text": "All eagles are birds. Shadow is a bird. Therefore, Shadow is an eagle.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_ac_dogs_mammals",
+          "text": "All dogs are mammals. Rex is a mammal. Therefore, Rex is a dog.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_ac_salmon_fish",
+          "text": "All salmon are fish. Silver is a fish. Therefore, Silver is a salmon.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_ac_roses_flowers",
+          "text": "All roses are flowers. Petal is a flower. Therefore, Petal is a rose.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_ac_oaks_trees",
+          "text": "All oaks are trees. Timber is a tree. Therefore, Timber is an oak.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "mt",
+      "description": "Valid modus tollens: All A are B, X is not B, therefore X is not A",
+      "validity": "valid",
+      "matched_pair": "da",
+      "prompts": [
+        {
+          "id": "s2a3_mt_cats_animals",
+          "text": "All cats are animals. Whiskers is not an animal. Therefore, Whiskers is not a cat.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_mt_eagles_birds",
+          "text": "All eagles are birds. Shadow is not a bird. Therefore, Shadow is not an eagle.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_mt_dogs_mammals",
+          "text": "All dogs are mammals. Rex is not a mammal. Therefore, Rex is not a dog.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_mt_salmon_fish",
+          "text": "All salmon are fish. Silver is not a fish. Therefore, Silver is not a salmon.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_mt_roses_flowers",
+          "text": "All roses are flowers. Petal is not a flower. Therefore, Petal is not a rose.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_mt_oaks_trees",
+          "text": "All oaks are trees. Timber is not a tree. Therefore, Timber is not an oak.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "da",
+      "description": "Invalid denying antecedent: All A are B, X is not A, therefore X is not B",
+      "validity": "invalid",
+      "matched_pair": "mt",
+      "prompts": [
+        {
+          "id": "s2a3_da_cats_animals",
+          "text": "All cats are animals. Whiskers is not a cat. Therefore, Whiskers is not an animal.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_da_eagles_birds",
+          "text": "All eagles are birds. Shadow is not an eagle. Therefore, Shadow is not a bird.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_da_dogs_mammals",
+          "text": "All dogs are mammals. Rex is not a dog. Therefore, Rex is not a mammal.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_da_salmon_fish",
+          "text": "All salmon are fish. Silver is not a salmon. Therefore, Silver is not a fish.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_da_roses_flowers",
+          "text": "All roses are flowers. Petal is not a rose. Therefore, Petal is not a flower.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_da_oaks_trees",
+          "text": "All oaks are trees. Timber is not an oak. Therefore, Timber is not a tree.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "mp_reorder",
+      "description": "Valid modus ponens with reordered premises",
+      "validity": "valid",
+      "matched_pair": "ac_reorder",
+      "prompts": [
+        {
+          "id": "s2a3_mp_reorder_cats_animals",
+          "text": "Whiskers is a cat. All cats are animals. Therefore, Whiskers is an animal.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_mp_reorder_eagles_birds",
+          "text": "Shadow is an eagle. All eagles are birds. Therefore, Shadow is a bird.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_mp_reorder_dogs_mammals",
+          "text": "Rex is a dog. All dogs are mammals. Therefore, Rex is a mammal.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_mp_reorder_salmon_fish",
+          "text": "Silver is a salmon. All salmon are fish. Therefore, Silver is a fish.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_mp_reorder_roses_flowers",
+          "text": "Petal is a rose. All roses are flowers. Therefore, Petal is a flower.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_mp_reorder_oaks_trees",
+          "text": "Timber is an oak. All oaks are trees. Therefore, Timber is a tree.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "ac_reorder",
+      "description": "Invalid affirming consequent with reordered premises",
+      "validity": "invalid",
+      "matched_pair": "mp_reorder",
+      "prompts": [
+        {
+          "id": "s2a3_ac_reorder_cats_animals",
+          "text": "Whiskers is an animal. All cats are animals. Therefore, Whiskers is a cat.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_ac_reorder_eagles_birds",
+          "text": "Shadow is a bird. All eagles are birds. Therefore, Shadow is an eagle.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_ac_reorder_dogs_mammals",
+          "text": "Rex is a mammal. All dogs are mammals. Therefore, Rex is a dog.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_ac_reorder_salmon_fish",
+          "text": "Silver is a fish. All salmon are fish. Therefore, Silver is a salmon.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_ac_reorder_roses_flowers",
+          "text": "Petal is a flower. All roses are flowers. Therefore, Petal is a rose.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_ac_reorder_oaks_trees",
+          "text": "Timber is a tree. All oaks are trees. Therefore, Timber is an oak.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "cond_mp",
+      "description": "Valid conditional modus ponens",
+      "validity": "valid",
+      "matched_pair": "cond_ac",
+      "prompts": [
+        {
+          "id": "s2a3_cond_mp_cats_animals",
+          "text": "If Whiskers is a cat, then Whiskers is an animal. Whiskers is a cat. Therefore, Whiskers is an animal.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_cond_mp_eagles_birds",
+          "text": "If Shadow is an eagle, then Shadow is a bird. Shadow is an eagle. Therefore, Shadow is a bird.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_cond_mp_dogs_mammals",
+          "text": "If Rex is a dog, then Rex is a mammal. Rex is a dog. Therefore, Rex is a mammal.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_cond_mp_salmon_fish",
+          "text": "If Silver is a salmon, then Silver is a fish. Silver is a salmon. Therefore, Silver is a fish.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_cond_mp_roses_flowers",
+          "text": "If Petal is a rose, then Petal is a flower. Petal is a rose. Therefore, Petal is a flower.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_cond_mp_oaks_trees",
+          "text": "If Timber is an oak, then Timber is a tree. Timber is an oak. Therefore, Timber is a tree.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "cond_ac",
+      "description": "Invalid conditional affirming consequent",
+      "validity": "invalid",
+      "matched_pair": "cond_mp",
+      "prompts": [
+        {
+          "id": "s2a3_cond_ac_cats_animals",
+          "text": "If Whiskers is a cat, then Whiskers is an animal. Whiskers is an animal. Therefore, Whiskers is a cat.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_cond_ac_eagles_birds",
+          "text": "If Shadow is an eagle, then Shadow is a bird. Shadow is a bird. Therefore, Shadow is an eagle.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_cond_ac_dogs_mammals",
+          "text": "If Rex is a dog, then Rex is a mammal. Rex is a mammal. Therefore, Rex is a dog.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_cond_ac_salmon_fish",
+          "text": "If Silver is a salmon, then Silver is a fish. Silver is a fish. Therefore, Silver is a salmon.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_cond_ac_roses_flowers",
+          "text": "If Petal is a rose, then Petal is a flower. Petal is a flower. Therefore, Petal is a rose.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_cond_ac_oaks_trees",
+          "text": "If Timber is an oak, then Timber is a tree. Timber is a tree. Therefore, Timber is an oak.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "because_mp",
+      "description": "Valid causal modus ponens",
+      "validity": "valid",
+      "matched_pair": "because_ac",
+      "prompts": [
+        {
+          "id": "s2a3_because_mp_cats_animals",
+          "text": "Because all cats are animals, and Whiskers is a cat, Whiskers must be an animal.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_because_mp_eagles_birds",
+          "text": "Because all eagles are birds, and Shadow is an eagle, Shadow must be a bird.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_because_mp_dogs_mammals",
+          "text": "Because all dogs are mammals, and Rex is a dog, Rex must be a mammal.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_because_mp_salmon_fish",
+          "text": "Because all salmon are fish, and Silver is a salmon, Silver must be a fish.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_because_mp_roses_flowers",
+          "text": "Because all roses are flowers, and Petal is a rose, Petal must be a flower.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_because_mp_oaks_trees",
+          "text": "Because all oaks are trees, and Timber is an oak, Timber must be a tree.",
+          "form": "oaks_trees"
+        }
+      ]
+    },
+    {
+      "group_id": "because_ac",
+      "description": "Invalid causal affirming consequent",
+      "validity": "invalid",
+      "matched_pair": "because_mp",
+      "prompts": [
+        {
+          "id": "s2a3_because_ac_cats_animals",
+          "text": "Because all cats are animals, and Whiskers is an animal, Whiskers must be a cat.",
+          "form": "cats_animals"
+        },
+        {
+          "id": "s2a3_because_ac_eagles_birds",
+          "text": "Because all eagles are birds, and Shadow is a bird, Shadow must be an eagle.",
+          "form": "eagles_birds"
+        },
+        {
+          "id": "s2a3_because_ac_dogs_mammals",
+          "text": "Because all dogs are mammals, and Rex is a mammal, Rex must be a dog.",
+          "form": "dogs_mammals"
+        },
+        {
+          "id": "s2a3_because_ac_salmon_fish",
+          "text": "Because all salmon are fish, and Silver is a fish, Silver must be a salmon.",
+          "form": "salmon_fish"
+        },
+        {
+          "id": "s2a3_because_ac_roses_flowers",
+          "text": "Because all roses are flowers, and Petal is a flower, Petal must be a rose.",
+          "form": "roses_flowers"
+        },
+        {
+          "id": "s2a3_because_ac_oaks_trees",
+          "text": "Because all oaks are trees, and Timber is a tree, Timber must be an oak.",
+          "form": "oaks_trees"
+        }
+      ]
+    }
+  ],
+  "train_groups": [
+    "mp",
+    "ac",
+    "mt",
+    "da",
+    "mp_reorder",
+    "ac_reorder"
+  ],
+  "test_groups": [
+    "cond_mp",
+    "cond_ac",
+    "because_mp",
+    "because_ac"
+  ],
+  "matched_pairs": [
+    [
+      "mp",
+      "ac"
+    ],
+    [
+      "mt",
+      "da"
+    ],
+    [
+      "mp_reorder",
+      "ac_reorder"
+    ],
+    [
+      "cond_mp",
+      "cond_ac"
+    ],
+    [
+      "because_mp",
+      "because_ac"
+    ]
+  ]
+}

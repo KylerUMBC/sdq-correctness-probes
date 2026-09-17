@@ -1,0 +1,128 @@
+{
+  "task_family": "syllogistic_inference_scaled",
+  "description": "Scaled syllogistic reasoning: 10 semantic groups × 6 surface forms = 60 prompts. Train on 6 groups (36 prompts), test on 4 held-out groups (24 prompts). More entities, more relation types (category, ability, property), more paraphrase forms than Stage 1E.",
+  "train_groups": ["cats_animals", "fish_swim", "dogs_loyal", "roses_flowers", "eagles_fly", "rabbits_fast"],
+  "test_groups": ["bears_strong", "dolphins_smart", "owls_wise", "horses_run"],
+  "groups": [
+    {
+      "group_id": "cats_animals",
+      "semantic_label": "All cats are animals, Luna is a cat, so Luna is an animal",
+      "prompts": [
+        {"id": "s2_cat_therefore", "text": "All cats are animals. Luna is a cat. Therefore Luna is",       "form": "therefore"},
+        {"id": "s2_cat_reorder",   "text": "Luna is a cat. All cats are animals. So Luna is",              "form": "reorder"},
+        {"id": "s2_cat_since",     "text": "Since Luna is a cat, and all cats are animals, Luna is",       "form": "since"},
+        {"id": "s2_cat_given",     "text": "Given that all cats are animals and Luna is a cat, Luna is",   "form": "given"},
+        {"id": "s2_cat_because",   "text": "Because all cats are animals, and Luna is a cat, Luna is",     "form": "because"},
+        {"id": "s2_cat_knowing",   "text": "Knowing that Luna is a cat, and all cats are animals, Luna is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "fish_swim",
+      "semantic_label": "All fish can swim, Nemo is a fish, so Nemo can swim",
+      "prompts": [
+        {"id": "s2_fish_therefore", "text": "All fish can swim. Nemo is a fish. Therefore Nemo can",       "form": "therefore"},
+        {"id": "s2_fish_reorder",   "text": "Nemo is a fish. All fish can swim. So Nemo can",              "form": "reorder"},
+        {"id": "s2_fish_since",     "text": "Since Nemo is a fish, and all fish can swim, Nemo can",       "form": "since"},
+        {"id": "s2_fish_given",     "text": "Given that all fish can swim and Nemo is a fish, Nemo can",   "form": "given"},
+        {"id": "s2_fish_because",   "text": "Because all fish can swim, and Nemo is a fish, Nemo can",     "form": "because"},
+        {"id": "s2_fish_knowing",   "text": "Knowing that Nemo is a fish, and all fish can swim, Nemo can","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "dogs_loyal",
+      "semantic_label": "All dogs are loyal, Rex is a dog, so Rex is loyal",
+      "prompts": [
+        {"id": "s2_dog_therefore", "text": "All dogs are loyal. Rex is a dog. Therefore Rex is",       "form": "therefore"},
+        {"id": "s2_dog_reorder",   "text": "Rex is a dog. All dogs are loyal. So Rex is",              "form": "reorder"},
+        {"id": "s2_dog_since",     "text": "Since Rex is a dog, and all dogs are loyal, Rex is",       "form": "since"},
+        {"id": "s2_dog_given",     "text": "Given that all dogs are loyal and Rex is a dog, Rex is",   "form": "given"},
+        {"id": "s2_dog_because",   "text": "Because all dogs are loyal, and Rex is a dog, Rex is",     "form": "because"},
+        {"id": "s2_dog_knowing",   "text": "Knowing that Rex is a dog, and all dogs are loyal, Rex is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "roses_flowers",
+      "semantic_label": "All roses are flowers, Bella is a rose, so Bella is a flower",
+      "prompts": [
+        {"id": "s2_rose_therefore", "text": "All roses are flowers. Bella is a rose. Therefore Bella is",       "form": "therefore"},
+        {"id": "s2_rose_reorder",   "text": "Bella is a rose. All roses are flowers. So Bella is",              "form": "reorder"},
+        {"id": "s2_rose_since",     "text": "Since Bella is a rose, and all roses are flowers, Bella is",       "form": "since"},
+        {"id": "s2_rose_given",     "text": "Given that all roses are flowers and Bella is a rose, Bella is",   "form": "given"},
+        {"id": "s2_rose_because",   "text": "Because all roses are flowers, and Bella is a rose, Bella is",     "form": "because"},
+        {"id": "s2_rose_knowing",   "text": "Knowing that Bella is a rose, and all roses are flowers, Bella is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "eagles_fly",
+      "semantic_label": "All eagles can fly, Zeus is an eagle, so Zeus can fly",
+      "prompts": [
+        {"id": "s2_eagle_therefore", "text": "All eagles can fly. Zeus is an eagle. Therefore Zeus can",       "form": "therefore"},
+        {"id": "s2_eagle_reorder",   "text": "Zeus is an eagle. All eagles can fly. So Zeus can",              "form": "reorder"},
+        {"id": "s2_eagle_since",     "text": "Since Zeus is an eagle, and all eagles can fly, Zeus can",       "form": "since"},
+        {"id": "s2_eagle_given",     "text": "Given that all eagles can fly and Zeus is an eagle, Zeus can",   "form": "given"},
+        {"id": "s2_eagle_because",   "text": "Because all eagles can fly, and Zeus is an eagle, Zeus can",     "form": "because"},
+        {"id": "s2_eagle_knowing",   "text": "Knowing that Zeus is an eagle, and all eagles can fly, Zeus can","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "rabbits_fast",
+      "semantic_label": "All rabbits are fast, Thumper is a rabbit, so Thumper is fast",
+      "prompts": [
+        {"id": "s2_rabbit_therefore", "text": "All rabbits are fast. Thumper is a rabbit. Therefore Thumper is",       "form": "therefore"},
+        {"id": "s2_rabbit_reorder",   "text": "Thumper is a rabbit. All rabbits are fast. So Thumper is",              "form": "reorder"},
+        {"id": "s2_rabbit_since",     "text": "Since Thumper is a rabbit, and all rabbits are fast, Thumper is",       "form": "since"},
+        {"id": "s2_rabbit_given",     "text": "Given that all rabbits are fast and Thumper is a rabbit, Thumper is",   "form": "given"},
+        {"id": "s2_rabbit_because",   "text": "Because all rabbits are fast, and Thumper is a rabbit, Thumper is",     "form": "because"},
+        {"id": "s2_rabbit_knowing",   "text": "Knowing that Thumper is a rabbit, and all rabbits are fast, Thumper is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "bears_strong",
+      "semantic_label": "All bears are strong, Bruno is a bear, so Bruno is strong",
+      "prompts": [
+        {"id": "s2_bear_therefore", "text": "All bears are strong. Bruno is a bear. Therefore Bruno is",       "form": "therefore"},
+        {"id": "s2_bear_reorder",   "text": "Bruno is a bear. All bears are strong. So Bruno is",              "form": "reorder"},
+        {"id": "s2_bear_since",     "text": "Since Bruno is a bear, and all bears are strong, Bruno is",       "form": "since"},
+        {"id": "s2_bear_given",     "text": "Given that all bears are strong and Bruno is a bear, Bruno is",   "form": "given"},
+        {"id": "s2_bear_because",   "text": "Because all bears are strong, and Bruno is a bear, Bruno is",     "form": "because"},
+        {"id": "s2_bear_knowing",   "text": "Knowing that Bruno is a bear, and all bears are strong, Bruno is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "dolphins_smart",
+      "semantic_label": "All dolphins are smart, Flipper is a dolphin, so Flipper is smart",
+      "prompts": [
+        {"id": "s2_dolphin_therefore", "text": "All dolphins are smart. Flipper is a dolphin. Therefore Flipper is",       "form": "therefore"},
+        {"id": "s2_dolphin_reorder",   "text": "Flipper is a dolphin. All dolphins are smart. So Flipper is",              "form": "reorder"},
+        {"id": "s2_dolphin_since",     "text": "Since Flipper is a dolphin, and all dolphins are smart, Flipper is",       "form": "since"},
+        {"id": "s2_dolphin_given",     "text": "Given that all dolphins are smart and Flipper is a dolphin, Flipper is",   "form": "given"},
+        {"id": "s2_dolphin_because",   "text": "Because all dolphins are smart, and Flipper is a dolphin, Flipper is",     "form": "because"},
+        {"id": "s2_dolphin_knowing",   "text": "Knowing that Flipper is a dolphin, and all dolphins are smart, Flipper is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "owls_wise",
+      "semantic_label": "All owls are wise, Athena is an owl, so Athena is wise",
+      "prompts": [
+        {"id": "s2_owl_therefore", "text": "All owls are wise. Athena is an owl. Therefore Athena is",       "form": "therefore"},
+        {"id": "s2_owl_reorder",   "text": "Athena is an owl. All owls are wise. So Athena is",              "form": "reorder"},
+        {"id": "s2_owl_since",     "text": "Since Athena is an owl, and all owls are wise, Athena is",       "form": "since"},
+        {"id": "s2_owl_given",     "text": "Given that all owls are wise and Athena is an owl, Athena is",   "form": "given"},
+        {"id": "s2_owl_because",   "text": "Because all owls are wise, and Athena is an owl, Athena is",     "form": "because"},
+        {"id": "s2_owl_knowing",   "text": "Knowing that Athena is an owl, and all owls are wise, Athena is","form": "knowing"}
+      ]
+    },
+    {
+      "group_id": "horses_run",
+      "semantic_label": "All horses can run, Spirit is a horse, so Spirit can run",
+      "prompts": [
+        {"id": "s2_horse_therefore", "text": "All horses can run. Spirit is a horse. Therefore Spirit can",       "form": "therefore"},
+        {"id": "s2_horse_reorder",   "text": "Spirit is a horse. All horses can run. So Spirit can",              "form": "reorder"},
+        {"id": "s2_horse_since",     "text": "Since Spirit is a horse, and all horses can run, Spirit can",       "form": "since"},
+        {"id": "s2_horse_given",     "text": "Given that all horses can run and Spirit is a horse, Spirit can",   "form": "given"},
+        {"id": "s2_horse_because",   "text": "Because all horses can run, and Spirit is a horse, Spirit can",     "form": "because"},
+        {"id": "s2_horse_knowing",   "text": "Knowing that Spirit is a horse, and all horses can run, Spirit can","form": "knowing"}
+      ]
+    }
+  ]
+}

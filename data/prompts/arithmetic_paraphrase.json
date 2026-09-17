@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "group_id": "add_5",
+      "semantic_label": "2 + 3 = 5",
+      "prompts": [
+        {"id": "add5_base",       "text": "2 + 3 =",          "form": "equals",    "surface_diff": "base"},
+        {"id": "add5_reorder",    "text": "3 + 2 =",          "form": "equals",    "surface_diff": "reorder"},
+        {"id": "add5_worded",     "text": "What is 2 + 3?",   "form": "question",  "surface_diff": "wording"},
+        {"id": "add5_worded2",    "text": "Calculate 2 + 3.",  "form": "calculate", "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "add_15",
+      "semantic_label": "7 + 8 = 15",
+      "prompts": [
+        {"id": "add15_base",      "text": "7 + 8 =",          "form": "equals",    "surface_diff": "base"},
+        {"id": "add15_reorder",   "text": "8 + 7 =",          "form": "equals",    "surface_diff": "reorder"},
+        {"id": "add15_worded",    "text": "What is 7 + 8?",   "form": "question",  "surface_diff": "wording"},
+        {"id": "add15_worded2",   "text": "Calculate 7 + 8.",  "form": "calculate", "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "mul_20",
+      "semantic_label": "4 * 5 = 20",
+      "prompts": [
+        {"id": "mul20_base",      "text": "4 * 5 =",          "form": "equals",    "surface_diff": "base"},
+        {"id": "mul20_reorder",   "text": "5 * 4 =",          "form": "equals",    "surface_diff": "reorder"},
+        {"id": "mul20_worded",    "text": "What is 4 * 5?",   "form": "question",  "surface_diff": "wording"},
+        {"id": "mul20_worded2",   "text": "Calculate 4 * 5.",  "form": "calculate", "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "mul_42",
+      "semantic_label": "6 * 7 = 42",
+      "prompts": [
+        {"id": "mul42_base",      "text": "6 * 7 =",          "form": "equals",    "surface_diff": "base"},
+        {"id": "mul42_reorder",   "text": "7 * 6 =",          "form": "equals",    "surface_diff": "reorder"},
+        {"id": "mul42_worded",    "text": "What is 6 * 7?",   "form": "question",  "surface_diff": "wording"},
+        {"id": "mul42_worded2",   "text": "Calculate 6 * 7.",  "form": "calculate", "surface_diff": "wording"}
+      ]
+    }
+  ]
+}

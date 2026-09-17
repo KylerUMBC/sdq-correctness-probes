@@ -1,0 +1,1 @@
+"""SDQ — Semantic Dynamics Quotienting."""

@@ -1,0 +1,48 @@
+{
+  "task_family": "factual_capitals",
+  "description": "Capital-city recall: 4 countries × 4 surface forms. Completely different domain from arithmetic.",
+  "train_groups": ["france_paris", "germany_berlin"],
+  "test_groups": ["japan_tokyo", "italy_rome"],
+  "groups": [
+    {
+      "group_id": "france_paris",
+      "semantic_label": "The capital of France is Paris",
+      "prompts": [
+        {"id": "fr_statement",  "text": "The capital of France is",       "form": "statement", "surface_diff": "base"},
+        {"id": "fr_question",   "text": "What is the capital of France?", "form": "question",  "surface_diff": "wording"},
+        {"id": "fr_name",       "text": "Name the capital of France.",    "form": "name",      "surface_diff": "wording"},
+        {"id": "fr_complete",   "text": "France's capital:",              "form": "complete",   "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "japan_tokyo",
+      "semantic_label": "The capital of Japan is Tokyo",
+      "prompts": [
+        {"id": "jp_statement",  "text": "The capital of Japan is",       "form": "statement", "surface_diff": "base"},
+        {"id": "jp_question",   "text": "What is the capital of Japan?", "form": "question",  "surface_diff": "wording"},
+        {"id": "jp_name",       "text": "Name the capital of Japan.",    "form": "name",      "surface_diff": "wording"},
+        {"id": "jp_complete",   "text": "Japan's capital:",              "form": "complete",   "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "germany_berlin",
+      "semantic_label": "The capital of Germany is Berlin",
+      "prompts": [
+        {"id": "de_statement",  "text": "The capital of Germany is",       "form": "statement", "surface_diff": "base"},
+        {"id": "de_question",   "text": "What is the capital of Germany?", "form": "question",  "surface_diff": "wording"},
+        {"id": "de_name",       "text": "Name the capital of Germany.",    "form": "name",      "surface_diff": "wording"},
+        {"id": "de_complete",   "text": "Germany's capital:",              "form": "complete",   "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "italy_rome",
+      "semantic_label": "The capital of Italy is Rome",
+      "prompts": [
+        {"id": "it_statement",  "text": "The capital of Italy is",       "form": "statement", "surface_diff": "base"},
+        {"id": "it_question",   "text": "What is the capital of Italy?", "form": "question",  "surface_diff": "wording"},
+        {"id": "it_name",       "text": "Name the capital of Italy.",    "form": "name",      "surface_diff": "wording"},
+        {"id": "it_complete",   "text": "Italy's capital:",              "form": "complete",   "surface_diff": "wording"}
+      ]
+    }
+  ]
+}

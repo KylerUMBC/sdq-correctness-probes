@@ -1,0 +1,15 @@
+model:
+  name: "google/gemma-3-1b-pt"
+  dtype: "bfloat16"
+  device: "cuda"
+
+inference:
+  seed: 42
+  max_new_tokens: 32
+  do_sample: false
+  temperature: 1.0
+  top_k: 1
+
+storage:
+  runs_dir: "./data/runs"
+  prompts_dir: "./data/prompts"

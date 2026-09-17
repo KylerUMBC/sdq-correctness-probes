@@ -1,0 +1,1893 @@
+{
+  "stage": "2C",
+  "task": "structural_inference_scaled",
+  "description": "10 inference types x 30 entity sets = 300 prompts. Same logical structure as 2A.3 but 5x more data.",
+  "groups": [
+    {
+      "group_id": "mp",
+      "prompts": [
+        {
+          "id": "s2c_mp_cats_animals",
+          "form": "cats_animals",
+          "text": "All cats are animals. Whiskers is a cat. Therefore, Whiskers is an animal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_eagles_birds",
+          "form": "eagles_birds",
+          "text": "All eagles are birds. Shadow is an eagle. Therefore, Shadow is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "All dogs are mammals. Rex is a dog. Therefore, Rex is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_salmon_fish",
+          "form": "salmon_fish",
+          "text": "All salmon are fish. Silver is a salmon. Therefore, Silver is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_roses_flowers",
+          "form": "roses_flowers",
+          "text": "All roses are flowers. Rosie is a rose. Therefore, Rosie is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_oaks_trees",
+          "form": "oaks_trees",
+          "text": "All oaks are trees. Old Growth is an oak. Therefore, Old Growth is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_wolves_canines",
+          "form": "wolves_canines",
+          "text": "All wolves are canines. Fang is a wolf. Therefore, Fang is a canine.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_tigers_felines",
+          "form": "tigers_felines",
+          "text": "All tigers are felines. Stripe is a tiger. Therefore, Stripe is a feline.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "All sparrows are birds. Chirp is a sparrow. Therefore, Chirp is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_whales_mammals",
+          "form": "whales_mammals",
+          "text": "All whales are mammals. Moby is a whale. Therefore, Moby is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "All tulips are flowers. Petal is a tulip. Therefore, Petal is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_pines_trees",
+          "form": "pines_trees",
+          "text": "All pines are trees. Evergreen is a pine. Therefore, Evergreen is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_trout_fish",
+          "form": "trout_fish",
+          "text": "All trout are fish. Splash is a trout. Therefore, Splash is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "All hawks are raptors. Talon is a hawk. Therefore, Talon is a raptor.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_ants_insects",
+          "form": "ants_insects",
+          "text": "All ants are insects. Scout is an ant. Therefore, Scout is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_bees_insects",
+          "form": "bees_insects",
+          "text": "All bees are insects. Buzz is a bee. Therefore, Buzz is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "All snakes are reptiles. Scales is a snake. Therefore, Scales is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "All frogs are amphibians. Jumper is a frog. Therefore, Jumper is an amphibian.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_apples_fruits",
+          "form": "apples_fruits",
+          "text": "All apples are fruits. Gala is an apple. Therefore, Gala is a fruit.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "All carrots are vegetables. Crunchy is a carrot. Therefore, Crunchy is a vegetable.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_gold_metals",
+          "form": "gold_metals",
+          "text": "All gold are metals. Nugget is gold. Therefore, Nugget is a metal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "All diamonds are gems. Sparkle is a diamond. Therefore, Sparkle is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_violins_instruments",
+          "form": "violins_instruments",
+          "text": "All violins are instruments. Strad is a violin. Therefore, Strad is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_novels_books",
+          "form": "novels_books",
+          "text": "All novels are books. Gatsby is a novel. Therefore, Gatsby is a book.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "All sedans are vehicles. Cruiser is a sedan. Therefore, Cruiser is a vehicle.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "All guitars are instruments. Strummer is a guitar. Therefore, Strummer is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_rubies_gems",
+          "form": "rubies_gems",
+          "text": "All rubies are gems. Crimson is a ruby. Therefore, Crimson is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_bears_mammals",
+          "form": "bears_mammals",
+          "text": "All bears are mammals. Grizzly is a bear. Therefore, Grizzly is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "All lizards are reptiles. Gecko is a lizard. Therefore, Gecko is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_moths_insects",
+          "form": "moths_insects",
+          "text": "All moths are insects. Luna is a moth. Therefore, Luna is an insect.",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "group_id": "ac",
+      "prompts": [
+        {
+          "id": "s2c_ac_cats_animals",
+          "form": "cats_animals",
+          "text": "All cats are animals. Whiskers is an animal. Therefore, Whiskers is a cat.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_eagles_birds",
+          "form": "eagles_birds",
+          "text": "All eagles are birds. Shadow is a bird. Therefore, Shadow is an eagle.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "All dogs are mammals. Rex is a mammal. Therefore, Rex is a dog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_salmon_fish",
+          "form": "salmon_fish",
+          "text": "All salmon are fish. Silver is a fish. Therefore, Silver is a salmon.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_roses_flowers",
+          "form": "roses_flowers",
+          "text": "All roses are flowers. Rosie is a flower. Therefore, Rosie is a rose.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_oaks_trees",
+          "form": "oaks_trees",
+          "text": "All oaks are trees. Old Growth is a tree. Therefore, Old Growth is an oak.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_wolves_canines",
+          "form": "wolves_canines",
+          "text": "All wolves are canines. Fang is a canine. Therefore, Fang is a wolf.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_tigers_felines",
+          "form": "tigers_felines",
+          "text": "All tigers are felines. Stripe is a feline. Therefore, Stripe is a tiger.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "All sparrows are birds. Chirp is a bird. Therefore, Chirp is a sparrow.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_whales_mammals",
+          "form": "whales_mammals",
+          "text": "All whales are mammals. Moby is a mammal. Therefore, Moby is a whale.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "All tulips are flowers. Petal is a flower. Therefore, Petal is a tulip.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_pines_trees",
+          "form": "pines_trees",
+          "text": "All pines are trees. Evergreen is a tree. Therefore, Evergreen is a pine.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_trout_fish",
+          "form": "trout_fish",
+          "text": "All trout are fish. Splash is a fish. Therefore, Splash is a trout.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "All hawks are raptors. Talon is a raptor. Therefore, Talon is a hawk.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_ants_insects",
+          "form": "ants_insects",
+          "text": "All ants are insects. Scout is an insect. Therefore, Scout is an ant.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_bees_insects",
+          "form": "bees_insects",
+          "text": "All bees are insects. Buzz is an insect. Therefore, Buzz is a bee.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "All snakes are reptiles. Scales is a reptile. Therefore, Scales is a snake.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "All frogs are amphibians. Jumper is an amphibian. Therefore, Jumper is a frog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_apples_fruits",
+          "form": "apples_fruits",
+          "text": "All apples are fruits. Gala is a fruit. Therefore, Gala is an apple.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "All carrots are vegetables. Crunchy is a vegetable. Therefore, Crunchy is a carrot.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_gold_metals",
+          "form": "gold_metals",
+          "text": "All gold are metals. Nugget is a metal. Therefore, Nugget is gold.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "All diamonds are gems. Sparkle is a gem. Therefore, Sparkle is a diamond.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_violins_instruments",
+          "form": "violins_instruments",
+          "text": "All violins are instruments. Strad is an instrument. Therefore, Strad is a violin.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_novels_books",
+          "form": "novels_books",
+          "text": "All novels are books. Gatsby is a book. Therefore, Gatsby is a novel.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "All sedans are vehicles. Cruiser is a vehicle. Therefore, Cruiser is a sedan.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "All guitars are instruments. Strummer is an instrument. Therefore, Strummer is a guitar.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_rubies_gems",
+          "form": "rubies_gems",
+          "text": "All rubies are gems. Crimson is a gem. Therefore, Crimson is a ruby.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_bears_mammals",
+          "form": "bears_mammals",
+          "text": "All bears are mammals. Grizzly is a mammal. Therefore, Grizzly is a bear.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "All lizards are reptiles. Gecko is a reptile. Therefore, Gecko is a lizard.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_moths_insects",
+          "form": "moths_insects",
+          "text": "All moths are insects. Luna is an insect. Therefore, Luna is a moth.",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "group_id": "mt",
+      "prompts": [
+        {
+          "id": "s2c_mt_cats_animals",
+          "form": "cats_animals",
+          "text": "All cats are animals. Whiskers is not an animal. Therefore, Whiskers is not a cat.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_eagles_birds",
+          "form": "eagles_birds",
+          "text": "All eagles are birds. Shadow is not a bird. Therefore, Shadow is not an eagle.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "All dogs are mammals. Rex is not a mammal. Therefore, Rex is not a dog.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_salmon_fish",
+          "form": "salmon_fish",
+          "text": "All salmon are fish. Silver is not a fish. Therefore, Silver is not a salmon.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_roses_flowers",
+          "form": "roses_flowers",
+          "text": "All roses are flowers. Rosie is not a flower. Therefore, Rosie is not a rose.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_oaks_trees",
+          "form": "oaks_trees",
+          "text": "All oaks are trees. Old Growth is not a tree. Therefore, Old Growth is not an oak.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_wolves_canines",
+          "form": "wolves_canines",
+          "text": "All wolves are canines. Fang is not a canine. Therefore, Fang is not a wolf.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_tigers_felines",
+          "form": "tigers_felines",
+          "text": "All tigers are felines. Stripe is not a feline. Therefore, Stripe is not a tiger.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "All sparrows are birds. Chirp is not a bird. Therefore, Chirp is not a sparrow.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_whales_mammals",
+          "form": "whales_mammals",
+          "text": "All whales are mammals. Moby is not a mammal. Therefore, Moby is not a whale.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "All tulips are flowers. Petal is not a flower. Therefore, Petal is not a tulip.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_pines_trees",
+          "form": "pines_trees",
+          "text": "All pines are trees. Evergreen is not a tree. Therefore, Evergreen is not a pine.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_trout_fish",
+          "form": "trout_fish",
+          "text": "All trout are fish. Splash is not a fish. Therefore, Splash is not a trout.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "All hawks are raptors. Talon is not a raptor. Therefore, Talon is not a hawk.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_ants_insects",
+          "form": "ants_insects",
+          "text": "All ants are insects. Scout is not an insect. Therefore, Scout is not an ant.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_bees_insects",
+          "form": "bees_insects",
+          "text": "All bees are insects. Buzz is not an insect. Therefore, Buzz is not a bee.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "All snakes are reptiles. Scales is not a reptile. Therefore, Scales is not a snake.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "All frogs are amphibians. Jumper is not an amphibian. Therefore, Jumper is not a frog.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_apples_fruits",
+          "form": "apples_fruits",
+          "text": "All apples are fruits. Gala is not a fruit. Therefore, Gala is not an apple.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "All carrots are vegetables. Crunchy is not a vegetable. Therefore, Crunchy is not a carrot.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_gold_metals",
+          "form": "gold_metals",
+          "text": "All gold are metals. Nugget is not a metal. Therefore, Nugget is not gold.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "All diamonds are gems. Sparkle is not a gem. Therefore, Sparkle is not a diamond.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_violins_instruments",
+          "form": "violins_instruments",
+          "text": "All violins are instruments. Strad is not an instrument. Therefore, Strad is not a violin.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_novels_books",
+          "form": "novels_books",
+          "text": "All novels are books. Gatsby is not a book. Therefore, Gatsby is not a novel.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "All sedans are vehicles. Cruiser is not a vehicle. Therefore, Cruiser is not a sedan.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "All guitars are instruments. Strummer is not an instrument. Therefore, Strummer is not a guitar.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_rubies_gems",
+          "form": "rubies_gems",
+          "text": "All rubies are gems. Crimson is not a gem. Therefore, Crimson is not a ruby.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_bears_mammals",
+          "form": "bears_mammals",
+          "text": "All bears are mammals. Grizzly is not a mammal. Therefore, Grizzly is not a bear.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "All lizards are reptiles. Gecko is not a reptile. Therefore, Gecko is not a lizard.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mt_moths_insects",
+          "form": "moths_insects",
+          "text": "All moths are insects. Luna is not an insect. Therefore, Luna is not a moth.",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "group_id": "da",
+      "prompts": [
+        {
+          "id": "s2c_da_cats_animals",
+          "form": "cats_animals",
+          "text": "All cats are animals. Whiskers is not a cat. Therefore, Whiskers is not an animal.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_eagles_birds",
+          "form": "eagles_birds",
+          "text": "All eagles are birds. Shadow is not an eagle. Therefore, Shadow is not a bird.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "All dogs are mammals. Rex is not a dog. Therefore, Rex is not a mammal.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_salmon_fish",
+          "form": "salmon_fish",
+          "text": "All salmon are fish. Silver is not a salmon. Therefore, Silver is not a fish.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_roses_flowers",
+          "form": "roses_flowers",
+          "text": "All roses are flowers. Rosie is not a rose. Therefore, Rosie is not a flower.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_oaks_trees",
+          "form": "oaks_trees",
+          "text": "All oaks are trees. Old Growth is not an oak. Therefore, Old Growth is not a tree.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_wolves_canines",
+          "form": "wolves_canines",
+          "text": "All wolves are canines. Fang is not a wolf. Therefore, Fang is not a canine.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_tigers_felines",
+          "form": "tigers_felines",
+          "text": "All tigers are felines. Stripe is not a tiger. Therefore, Stripe is not a feline.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "All sparrows are birds. Chirp is not a sparrow. Therefore, Chirp is not a bird.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_whales_mammals",
+          "form": "whales_mammals",
+          "text": "All whales are mammals. Moby is not a whale. Therefore, Moby is not a mammal.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "All tulips are flowers. Petal is not a tulip. Therefore, Petal is not a flower.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_pines_trees",
+          "form": "pines_trees",
+          "text": "All pines are trees. Evergreen is not a pine. Therefore, Evergreen is not a tree.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_trout_fish",
+          "form": "trout_fish",
+          "text": "All trout are fish. Splash is not a trout. Therefore, Splash is not a fish.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "All hawks are raptors. Talon is not a hawk. Therefore, Talon is not a raptor.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_ants_insects",
+          "form": "ants_insects",
+          "text": "All ants are insects. Scout is not an ant. Therefore, Scout is not an insect.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_bees_insects",
+          "form": "bees_insects",
+          "text": "All bees are insects. Buzz is not a bee. Therefore, Buzz is not an insect.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "All snakes are reptiles. Scales is not a snake. Therefore, Scales is not a reptile.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "All frogs are amphibians. Jumper is not a frog. Therefore, Jumper is not an amphibian.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_apples_fruits",
+          "form": "apples_fruits",
+          "text": "All apples are fruits. Gala is not an apple. Therefore, Gala is not a fruit.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "All carrots are vegetables. Crunchy is not a carrot. Therefore, Crunchy is not a vegetable.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_gold_metals",
+          "form": "gold_metals",
+          "text": "All gold are metals. Nugget is not gold. Therefore, Nugget is not a metal.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "All diamonds are gems. Sparkle is not a diamond. Therefore, Sparkle is not a gem.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_violins_instruments",
+          "form": "violins_instruments",
+          "text": "All violins are instruments. Strad is not a violin. Therefore, Strad is not an instrument.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_novels_books",
+          "form": "novels_books",
+          "text": "All novels are books. Gatsby is not a novel. Therefore, Gatsby is not a book.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "All sedans are vehicles. Cruiser is not a sedan. Therefore, Cruiser is not a vehicle.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "All guitars are instruments. Strummer is not a guitar. Therefore, Strummer is not an instrument.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_rubies_gems",
+          "form": "rubies_gems",
+          "text": "All rubies are gems. Crimson is not a ruby. Therefore, Crimson is not a gem.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_bears_mammals",
+          "form": "bears_mammals",
+          "text": "All bears are mammals. Grizzly is not a bear. Therefore, Grizzly is not a mammal.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "All lizards are reptiles. Gecko is not a lizard. Therefore, Gecko is not a reptile.",
+          "valid": false
+        },
+        {
+          "id": "s2c_da_moths_insects",
+          "form": "moths_insects",
+          "text": "All moths are insects. Luna is not a moth. Therefore, Luna is not an insect.",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "group_id": "mp_reorder",
+      "prompts": [
+        {
+          "id": "s2c_mp_reorder_cats_animals",
+          "form": "cats_animals",
+          "text": "Whiskers is a cat. All cats are animals. Therefore, Whiskers is an animal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_eagles_birds",
+          "form": "eagles_birds",
+          "text": "Shadow is an eagle. All eagles are birds. Therefore, Shadow is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "Rex is a dog. All dogs are mammals. Therefore, Rex is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_salmon_fish",
+          "form": "salmon_fish",
+          "text": "Silver is a salmon. All salmon are fish. Therefore, Silver is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_roses_flowers",
+          "form": "roses_flowers",
+          "text": "Rosie is a rose. All roses are flowers. Therefore, Rosie is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_oaks_trees",
+          "form": "oaks_trees",
+          "text": "Old Growth is an oak. All oaks are trees. Therefore, Old Growth is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_wolves_canines",
+          "form": "wolves_canines",
+          "text": "Fang is a wolf. All wolves are canines. Therefore, Fang is a canine.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_tigers_felines",
+          "form": "tigers_felines",
+          "text": "Stripe is a tiger. All tigers are felines. Therefore, Stripe is a feline.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "Chirp is a sparrow. All sparrows are birds. Therefore, Chirp is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_whales_mammals",
+          "form": "whales_mammals",
+          "text": "Moby is a whale. All whales are mammals. Therefore, Moby is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "Petal is a tulip. All tulips are flowers. Therefore, Petal is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_pines_trees",
+          "form": "pines_trees",
+          "text": "Evergreen is a pine. All pines are trees. Therefore, Evergreen is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_trout_fish",
+          "form": "trout_fish",
+          "text": "Splash is a trout. All trout are fish. Therefore, Splash is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "Talon is a hawk. All hawks are raptors. Therefore, Talon is a raptor.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_ants_insects",
+          "form": "ants_insects",
+          "text": "Scout is an ant. All ants are insects. Therefore, Scout is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_bees_insects",
+          "form": "bees_insects",
+          "text": "Buzz is a bee. All bees are insects. Therefore, Buzz is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "Scales is a snake. All snakes are reptiles. Therefore, Scales is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "Jumper is a frog. All frogs are amphibians. Therefore, Jumper is an amphibian.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_apples_fruits",
+          "form": "apples_fruits",
+          "text": "Gala is an apple. All apples are fruits. Therefore, Gala is a fruit.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "Crunchy is a carrot. All carrots are vegetables. Therefore, Crunchy is a vegetable.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_gold_metals",
+          "form": "gold_metals",
+          "text": "Nugget is gold. All gold are metals. Therefore, Nugget is a metal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "Sparkle is a diamond. All diamonds are gems. Therefore, Sparkle is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_violins_instruments",
+          "form": "violins_instruments",
+          "text": "Strad is a violin. All violins are instruments. Therefore, Strad is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_novels_books",
+          "form": "novels_books",
+          "text": "Gatsby is a novel. All novels are books. Therefore, Gatsby is a book.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "Cruiser is a sedan. All sedans are vehicles. Therefore, Cruiser is a vehicle.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "Strummer is a guitar. All guitars are instruments. Therefore, Strummer is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_rubies_gems",
+          "form": "rubies_gems",
+          "text": "Crimson is a ruby. All rubies are gems. Therefore, Crimson is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_bears_mammals",
+          "form": "bears_mammals",
+          "text": "Grizzly is a bear. All bears are mammals. Therefore, Grizzly is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "Gecko is a lizard. All lizards are reptiles. Therefore, Gecko is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_mp_reorder_moths_insects",
+          "form": "moths_insects",
+          "text": "Luna is a moth. All moths are insects. Therefore, Luna is an insect.",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "group_id": "ac_reorder",
+      "prompts": [
+        {
+          "id": "s2c_ac_reorder_cats_animals",
+          "form": "cats_animals",
+          "text": "Whiskers is an animal. All cats are animals. Therefore, Whiskers is a cat.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_eagles_birds",
+          "form": "eagles_birds",
+          "text": "Shadow is a bird. All eagles are birds. Therefore, Shadow is an eagle.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "Rex is a mammal. All dogs are mammals. Therefore, Rex is a dog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_salmon_fish",
+          "form": "salmon_fish",
+          "text": "Silver is a fish. All salmon are fish. Therefore, Silver is a salmon.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_roses_flowers",
+          "form": "roses_flowers",
+          "text": "Rosie is a flower. All roses are flowers. Therefore, Rosie is a rose.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_oaks_trees",
+          "form": "oaks_trees",
+          "text": "Old Growth is a tree. All oaks are trees. Therefore, Old Growth is an oak.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_wolves_canines",
+          "form": "wolves_canines",
+          "text": "Fang is a canine. All wolves are canines. Therefore, Fang is a wolf.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_tigers_felines",
+          "form": "tigers_felines",
+          "text": "Stripe is a feline. All tigers are felines. Therefore, Stripe is a tiger.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "Chirp is a bird. All sparrows are birds. Therefore, Chirp is a sparrow.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_whales_mammals",
+          "form": "whales_mammals",
+          "text": "Moby is a mammal. All whales are mammals. Therefore, Moby is a whale.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "Petal is a flower. All tulips are flowers. Therefore, Petal is a tulip.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_pines_trees",
+          "form": "pines_trees",
+          "text": "Evergreen is a tree. All pines are trees. Therefore, Evergreen is a pine.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_trout_fish",
+          "form": "trout_fish",
+          "text": "Splash is a fish. All trout are fish. Therefore, Splash is a trout.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "Talon is a raptor. All hawks are raptors. Therefore, Talon is a hawk.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_ants_insects",
+          "form": "ants_insects",
+          "text": "Scout is an insect. All ants are insects. Therefore, Scout is an ant.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_bees_insects",
+          "form": "bees_insects",
+          "text": "Buzz is an insect. All bees are insects. Therefore, Buzz is a bee.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "Scales is a reptile. All snakes are reptiles. Therefore, Scales is a snake.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "Jumper is an amphibian. All frogs are amphibians. Therefore, Jumper is a frog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_apples_fruits",
+          "form": "apples_fruits",
+          "text": "Gala is a fruit. All apples are fruits. Therefore, Gala is an apple.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "Crunchy is a vegetable. All carrots are vegetables. Therefore, Crunchy is a carrot.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_gold_metals",
+          "form": "gold_metals",
+          "text": "Nugget is a metal. All gold are metals. Therefore, Nugget is gold.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "Sparkle is a gem. All diamonds are gems. Therefore, Sparkle is a diamond.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_violins_instruments",
+          "form": "violins_instruments",
+          "text": "Strad is an instrument. All violins are instruments. Therefore, Strad is a violin.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_novels_books",
+          "form": "novels_books",
+          "text": "Gatsby is a book. All novels are books. Therefore, Gatsby is a novel.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "Cruiser is a vehicle. All sedans are vehicles. Therefore, Cruiser is a sedan.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "Strummer is an instrument. All guitars are instruments. Therefore, Strummer is a guitar.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_rubies_gems",
+          "form": "rubies_gems",
+          "text": "Crimson is a gem. All rubies are gems. Therefore, Crimson is a ruby.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_bears_mammals",
+          "form": "bears_mammals",
+          "text": "Grizzly is a mammal. All bears are mammals. Therefore, Grizzly is a bear.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "Gecko is a reptile. All lizards are reptiles. Therefore, Gecko is a lizard.",
+          "valid": false
+        },
+        {
+          "id": "s2c_ac_reorder_moths_insects",
+          "form": "moths_insects",
+          "text": "Luna is an insect. All moths are insects. Therefore, Luna is a moth.",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "group_id": "cond_mp",
+      "prompts": [
+        {
+          "id": "s2c_cond_mp_cats_animals",
+          "form": "cats_animals",
+          "text": "If Whiskers is a cat, then Whiskers is an animal. Whiskers is a cat. Therefore, Whiskers is an animal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_eagles_birds",
+          "form": "eagles_birds",
+          "text": "If Shadow is an eagle, then Shadow is a bird. Shadow is an eagle. Therefore, Shadow is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "If Rex is a dog, then Rex is a mammal. Rex is a dog. Therefore, Rex is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_salmon_fish",
+          "form": "salmon_fish",
+          "text": "If Silver is a salmon, then Silver is a fish. Silver is a salmon. Therefore, Silver is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_roses_flowers",
+          "form": "roses_flowers",
+          "text": "If Rosie is a rose, then Rosie is a flower. Rosie is a rose. Therefore, Rosie is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_oaks_trees",
+          "form": "oaks_trees",
+          "text": "If Old Growth is an oak, then Old Growth is a tree. Old Growth is an oak. Therefore, Old Growth is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_wolves_canines",
+          "form": "wolves_canines",
+          "text": "If Fang is a wolf, then Fang is a canine. Fang is a wolf. Therefore, Fang is a canine.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_tigers_felines",
+          "form": "tigers_felines",
+          "text": "If Stripe is a tiger, then Stripe is a feline. Stripe is a tiger. Therefore, Stripe is a feline.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "If Chirp is a sparrow, then Chirp is a bird. Chirp is a sparrow. Therefore, Chirp is a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_whales_mammals",
+          "form": "whales_mammals",
+          "text": "If Moby is a whale, then Moby is a mammal. Moby is a whale. Therefore, Moby is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "If Petal is a tulip, then Petal is a flower. Petal is a tulip. Therefore, Petal is a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_pines_trees",
+          "form": "pines_trees",
+          "text": "If Evergreen is a pine, then Evergreen is a tree. Evergreen is a pine. Therefore, Evergreen is a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_trout_fish",
+          "form": "trout_fish",
+          "text": "If Splash is a trout, then Splash is a fish. Splash is a trout. Therefore, Splash is a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "If Talon is a hawk, then Talon is a raptor. Talon is a hawk. Therefore, Talon is a raptor.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_ants_insects",
+          "form": "ants_insects",
+          "text": "If Scout is an ant, then Scout is an insect. Scout is an ant. Therefore, Scout is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_bees_insects",
+          "form": "bees_insects",
+          "text": "If Buzz is a bee, then Buzz is an insect. Buzz is a bee. Therefore, Buzz is an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "If Scales is a snake, then Scales is a reptile. Scales is a snake. Therefore, Scales is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "If Jumper is a frog, then Jumper is an amphibian. Jumper is a frog. Therefore, Jumper is an amphibian.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_apples_fruits",
+          "form": "apples_fruits",
+          "text": "If Gala is an apple, then Gala is a fruit. Gala is an apple. Therefore, Gala is a fruit.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "If Crunchy is a carrot, then Crunchy is a vegetable. Crunchy is a carrot. Therefore, Crunchy is a vegetable.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_gold_metals",
+          "form": "gold_metals",
+          "text": "If Nugget is gold, then Nugget is a metal. Nugget is gold. Therefore, Nugget is a metal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "If Sparkle is a diamond, then Sparkle is a gem. Sparkle is a diamond. Therefore, Sparkle is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_violins_instruments",
+          "form": "violins_instruments",
+          "text": "If Strad is a violin, then Strad is an instrument. Strad is a violin. Therefore, Strad is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_novels_books",
+          "form": "novels_books",
+          "text": "If Gatsby is a novel, then Gatsby is a book. Gatsby is a novel. Therefore, Gatsby is a book.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "If Cruiser is a sedan, then Cruiser is a vehicle. Cruiser is a sedan. Therefore, Cruiser is a vehicle.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "If Strummer is a guitar, then Strummer is an instrument. Strummer is a guitar. Therefore, Strummer is an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_rubies_gems",
+          "form": "rubies_gems",
+          "text": "If Crimson is a ruby, then Crimson is a gem. Crimson is a ruby. Therefore, Crimson is a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_bears_mammals",
+          "form": "bears_mammals",
+          "text": "If Grizzly is a bear, then Grizzly is a mammal. Grizzly is a bear. Therefore, Grizzly is a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "If Gecko is a lizard, then Gecko is a reptile. Gecko is a lizard. Therefore, Gecko is a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_cond_mp_moths_insects",
+          "form": "moths_insects",
+          "text": "If Luna is a moth, then Luna is an insect. Luna is a moth. Therefore, Luna is an insect.",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "group_id": "cond_ac",
+      "prompts": [
+        {
+          "id": "s2c_cond_ac_cats_animals",
+          "form": "cats_animals",
+          "text": "If Whiskers is a cat, then Whiskers is an animal. Whiskers is an animal. Therefore, Whiskers is a cat.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_eagles_birds",
+          "form": "eagles_birds",
+          "text": "If Shadow is an eagle, then Shadow is a bird. Shadow is a bird. Therefore, Shadow is an eagle.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "If Rex is a dog, then Rex is a mammal. Rex is a mammal. Therefore, Rex is a dog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_salmon_fish",
+          "form": "salmon_fish",
+          "text": "If Silver is a salmon, then Silver is a fish. Silver is a fish. Therefore, Silver is a salmon.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_roses_flowers",
+          "form": "roses_flowers",
+          "text": "If Rosie is a rose, then Rosie is a flower. Rosie is a flower. Therefore, Rosie is a rose.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_oaks_trees",
+          "form": "oaks_trees",
+          "text": "If Old Growth is an oak, then Old Growth is a tree. Old Growth is a tree. Therefore, Old Growth is an oak.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_wolves_canines",
+          "form": "wolves_canines",
+          "text": "If Fang is a wolf, then Fang is a canine. Fang is a canine. Therefore, Fang is a wolf.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_tigers_felines",
+          "form": "tigers_felines",
+          "text": "If Stripe is a tiger, then Stripe is a feline. Stripe is a feline. Therefore, Stripe is a tiger.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "If Chirp is a sparrow, then Chirp is a bird. Chirp is a bird. Therefore, Chirp is a sparrow.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_whales_mammals",
+          "form": "whales_mammals",
+          "text": "If Moby is a whale, then Moby is a mammal. Moby is a mammal. Therefore, Moby is a whale.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "If Petal is a tulip, then Petal is a flower. Petal is a flower. Therefore, Petal is a tulip.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_pines_trees",
+          "form": "pines_trees",
+          "text": "If Evergreen is a pine, then Evergreen is a tree. Evergreen is a tree. Therefore, Evergreen is a pine.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_trout_fish",
+          "form": "trout_fish",
+          "text": "If Splash is a trout, then Splash is a fish. Splash is a fish. Therefore, Splash is a trout.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "If Talon is a hawk, then Talon is a raptor. Talon is a raptor. Therefore, Talon is a hawk.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_ants_insects",
+          "form": "ants_insects",
+          "text": "If Scout is an ant, then Scout is an insect. Scout is an insect. Therefore, Scout is an ant.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_bees_insects",
+          "form": "bees_insects",
+          "text": "If Buzz is a bee, then Buzz is an insect. Buzz is an insect. Therefore, Buzz is a bee.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "If Scales is a snake, then Scales is a reptile. Scales is a reptile. Therefore, Scales is a snake.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "If Jumper is a frog, then Jumper is an amphibian. Jumper is an amphibian. Therefore, Jumper is a frog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_apples_fruits",
+          "form": "apples_fruits",
+          "text": "If Gala is an apple, then Gala is a fruit. Gala is a fruit. Therefore, Gala is an apple.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "If Crunchy is a carrot, then Crunchy is a vegetable. Crunchy is a vegetable. Therefore, Crunchy is a carrot.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_gold_metals",
+          "form": "gold_metals",
+          "text": "If Nugget is gold, then Nugget is a metal. Nugget is a metal. Therefore, Nugget is gold.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "If Sparkle is a diamond, then Sparkle is a gem. Sparkle is a gem. Therefore, Sparkle is a diamond.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_violins_instruments",
+          "form": "violins_instruments",
+          "text": "If Strad is a violin, then Strad is an instrument. Strad is an instrument. Therefore, Strad is a violin.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_novels_books",
+          "form": "novels_books",
+          "text": "If Gatsby is a novel, then Gatsby is a book. Gatsby is a book. Therefore, Gatsby is a novel.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "If Cruiser is a sedan, then Cruiser is a vehicle. Cruiser is a vehicle. Therefore, Cruiser is a sedan.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "If Strummer is a guitar, then Strummer is an instrument. Strummer is an instrument. Therefore, Strummer is a guitar.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_rubies_gems",
+          "form": "rubies_gems",
+          "text": "If Crimson is a ruby, then Crimson is a gem. Crimson is a gem. Therefore, Crimson is a ruby.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_bears_mammals",
+          "form": "bears_mammals",
+          "text": "If Grizzly is a bear, then Grizzly is a mammal. Grizzly is a mammal. Therefore, Grizzly is a bear.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "If Gecko is a lizard, then Gecko is a reptile. Gecko is a reptile. Therefore, Gecko is a lizard.",
+          "valid": false
+        },
+        {
+          "id": "s2c_cond_ac_moths_insects",
+          "form": "moths_insects",
+          "text": "If Luna is a moth, then Luna is an insect. Luna is an insect. Therefore, Luna is a moth.",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "group_id": "because_mp",
+      "prompts": [
+        {
+          "id": "s2c_because_mp_cats_animals",
+          "form": "cats_animals",
+          "text": "Because all cats are animals, and Whiskers is a cat, Whiskers must be an animal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_eagles_birds",
+          "form": "eagles_birds",
+          "text": "Because all eagles are birds, and Shadow is an eagle, Shadow must be a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "Because all dogs are mammals, and Rex is a dog, Rex must be a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_salmon_fish",
+          "form": "salmon_fish",
+          "text": "Because all salmon are fish, and Silver is a salmon, Silver must be a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_roses_flowers",
+          "form": "roses_flowers",
+          "text": "Because all roses are flowers, and Rosie is a rose, Rosie must be a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_oaks_trees",
+          "form": "oaks_trees",
+          "text": "Because all oaks are trees, and Old Growth is an oak, Old Growth must be a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_wolves_canines",
+          "form": "wolves_canines",
+          "text": "Because all wolves are canines, and Fang is a wolf, Fang must be a canine.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_tigers_felines",
+          "form": "tigers_felines",
+          "text": "Because all tigers are felines, and Stripe is a tiger, Stripe must be a feline.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "Because all sparrows are birds, and Chirp is a sparrow, Chirp must be a bird.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_whales_mammals",
+          "form": "whales_mammals",
+          "text": "Because all whales are mammals, and Moby is a whale, Moby must be a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "Because all tulips are flowers, and Petal is a tulip, Petal must be a flower.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_pines_trees",
+          "form": "pines_trees",
+          "text": "Because all pines are trees, and Evergreen is a pine, Evergreen must be a tree.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_trout_fish",
+          "form": "trout_fish",
+          "text": "Because all trout are fish, and Splash is a trout, Splash must be a fish.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "Because all hawks are raptors, and Talon is a hawk, Talon must be a raptor.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_ants_insects",
+          "form": "ants_insects",
+          "text": "Because all ants are insects, and Scout is an ant, Scout must be an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_bees_insects",
+          "form": "bees_insects",
+          "text": "Because all bees are insects, and Buzz is a bee, Buzz must be an insect.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "Because all snakes are reptiles, and Scales is a snake, Scales must be a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "Because all frogs are amphibians, and Jumper is a frog, Jumper must be an amphibian.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_apples_fruits",
+          "form": "apples_fruits",
+          "text": "Because all apples are fruits, and Gala is an apple, Gala must be a fruit.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "Because all carrots are vegetables, and Crunchy is a carrot, Crunchy must be a vegetable.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_gold_metals",
+          "form": "gold_metals",
+          "text": "Because all gold are metals, and Nugget is gold, Nugget must be a metal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "Because all diamonds are gems, and Sparkle is a diamond, Sparkle must be a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_violins_instruments",
+          "form": "violins_instruments",
+          "text": "Because all violins are instruments, and Strad is a violin, Strad must be an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_novels_books",
+          "form": "novels_books",
+          "text": "Because all novels are books, and Gatsby is a novel, Gatsby must be a book.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "Because all sedans are vehicles, and Cruiser is a sedan, Cruiser must be a vehicle.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "Because all guitars are instruments, and Strummer is a guitar, Strummer must be an instrument.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_rubies_gems",
+          "form": "rubies_gems",
+          "text": "Because all rubies are gems, and Crimson is a ruby, Crimson must be a gem.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_bears_mammals",
+          "form": "bears_mammals",
+          "text": "Because all bears are mammals, and Grizzly is a bear, Grizzly must be a mammal.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "Because all lizards are reptiles, and Gecko is a lizard, Gecko must be a reptile.",
+          "valid": true
+        },
+        {
+          "id": "s2c_because_mp_moths_insects",
+          "form": "moths_insects",
+          "text": "Because all moths are insects, and Luna is a moth, Luna must be an insect.",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "group_id": "because_ac",
+      "prompts": [
+        {
+          "id": "s2c_because_ac_cats_animals",
+          "form": "cats_animals",
+          "text": "Because all cats are animals, and Whiskers is an animal, Whiskers must be a cat.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_eagles_birds",
+          "form": "eagles_birds",
+          "text": "Because all eagles are birds, and Shadow is a bird, Shadow must be an eagle.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_dogs_mammals",
+          "form": "dogs_mammals",
+          "text": "Because all dogs are mammals, and Rex is a mammal, Rex must be a dog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_salmon_fish",
+          "form": "salmon_fish",
+          "text": "Because all salmon are fish, and Silver is a fish, Silver must be a salmon.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_roses_flowers",
+          "form": "roses_flowers",
+          "text": "Because all roses are flowers, and Rosie is a flower, Rosie must be a rose.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_oaks_trees",
+          "form": "oaks_trees",
+          "text": "Because all oaks are trees, and Old Growth is a tree, Old Growth must be an oak.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_wolves_canines",
+          "form": "wolves_canines",
+          "text": "Because all wolves are canines, and Fang is a canine, Fang must be a wolf.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_tigers_felines",
+          "form": "tigers_felines",
+          "text": "Because all tigers are felines, and Stripe is a feline, Stripe must be a tiger.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_sparrows_birds",
+          "form": "sparrows_birds",
+          "text": "Because all sparrows are birds, and Chirp is a bird, Chirp must be a sparrow.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_whales_mammals",
+          "form": "whales_mammals",
+          "text": "Because all whales are mammals, and Moby is a mammal, Moby must be a whale.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_tulips_flowers",
+          "form": "tulips_flowers",
+          "text": "Because all tulips are flowers, and Petal is a flower, Petal must be a tulip.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_pines_trees",
+          "form": "pines_trees",
+          "text": "Because all pines are trees, and Evergreen is a tree, Evergreen must be a pine.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_trout_fish",
+          "form": "trout_fish",
+          "text": "Because all trout are fish, and Splash is a fish, Splash must be a trout.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_hawks_raptors",
+          "form": "hawks_raptors",
+          "text": "Because all hawks are raptors, and Talon is a raptor, Talon must be a hawk.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_ants_insects",
+          "form": "ants_insects",
+          "text": "Because all ants are insects, and Scout is an insect, Scout must be an ant.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_bees_insects",
+          "form": "bees_insects",
+          "text": "Because all bees are insects, and Buzz is an insect, Buzz must be a bee.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_snakes_reptiles",
+          "form": "snakes_reptiles",
+          "text": "Because all snakes are reptiles, and Scales is a reptile, Scales must be a snake.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_frogs_amphibians",
+          "form": "frogs_amphibians",
+          "text": "Because all frogs are amphibians, and Jumper is an amphibian, Jumper must be a frog.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_apples_fruits",
+          "form": "apples_fruits",
+          "text": "Because all apples are fruits, and Gala is a fruit, Gala must be an apple.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_carrots_vegetables",
+          "form": "carrots_vegetables",
+          "text": "Because all carrots are vegetables, and Crunchy is a vegetable, Crunchy must be a carrot.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_gold_metals",
+          "form": "gold_metals",
+          "text": "Because all gold are metals, and Nugget is a metal, Nugget must be gold.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_diamonds_gems",
+          "form": "diamonds_gems",
+          "text": "Because all diamonds are gems, and Sparkle is a gem, Sparkle must be a diamond.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_violins_instruments",
+          "form": "violins_instruments",
+          "text": "Because all violins are instruments, and Strad is an instrument, Strad must be a violin.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_novels_books",
+          "form": "novels_books",
+          "text": "Because all novels are books, and Gatsby is a book, Gatsby must be a novel.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_sedans_vehicles",
+          "form": "sedans_vehicles",
+          "text": "Because all sedans are vehicles, and Cruiser is a vehicle, Cruiser must be a sedan.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_guitars_instruments",
+          "form": "guitars_instruments",
+          "text": "Because all guitars are instruments, and Strummer is an instrument, Strummer must be a guitar.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_rubies_gems",
+          "form": "rubies_gems",
+          "text": "Because all rubies are gems, and Crimson is a gem, Crimson must be a ruby.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_bears_mammals",
+          "form": "bears_mammals",
+          "text": "Because all bears are mammals, and Grizzly is a mammal, Grizzly must be a bear.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_lizards_reptiles",
+          "form": "lizards_reptiles",
+          "text": "Because all lizards are reptiles, and Gecko is a reptile, Gecko must be a lizard.",
+          "valid": false
+        },
+        {
+          "id": "s2c_because_ac_moths_insects",
+          "form": "moths_insects",
+          "text": "Because all moths are insects, and Luna is an insect, Luna must be a moth.",
+          "valid": false
+        }
+      ]
+    }
+  ],
+  "train_groups": [
+    "mp",
+    "ac",
+    "mt",
+    "da",
+    "mp_reorder",
+    "ac_reorder"
+  ],
+  "test_groups": [
+    "cond_mp",
+    "cond_ac",
+    "because_mp",
+    "because_ac"
+  ],
+  "matched_pairs": [
+    [
+      "mp",
+      "ac"
+    ],
+    [
+      "mt",
+      "da"
+    ],
+    [
+      "mp_reorder",
+      "ac_reorder"
+    ],
+    [
+      "cond_mp",
+      "cond_ac"
+    ],
+    [
+      "because_mp",
+      "because_ac"
+    ]
+  ]
+}

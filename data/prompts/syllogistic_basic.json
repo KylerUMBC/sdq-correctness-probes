@@ -1,0 +1,48 @@
+{
+  "task_family": "syllogistic_inference",
+  "description": "Simple syllogistic reasoning: 4 different syllogisms × 4 surface forms. Tests whether semantic signal extends beyond answer-slot identity into inference structure.",
+  "train_groups": ["cats_animals", "fish_swim"],
+  "test_groups": ["birds_fly", "dogs_loyal"],
+  "groups": [
+    {
+      "group_id": "cats_animals",
+      "semantic_label": "All cats are animals, Luna is a cat, so Luna is an animal",
+      "prompts": [
+        {"id": "cat_therefore", "text": "All cats are animals. Luna is a cat. Therefore Luna is",      "form": "therefore", "surface_diff": "base"},
+        {"id": "cat_reorder",   "text": "Luna is a cat. All cats are animals. So Luna is",             "form": "reorder",   "surface_diff": "reorder"},
+        {"id": "cat_since",     "text": "Since Luna is a cat, and all cats are animals, Luna is",      "form": "since",     "surface_diff": "wording"},
+        {"id": "cat_given",     "text": "Given that all cats are animals and Luna is a cat, Luna is",  "form": "given",     "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "birds_fly",
+      "semantic_label": "All birds can fly, Tweety is a bird, so Tweety can fly",
+      "prompts": [
+        {"id": "bird_therefore", "text": "All birds can fly. Tweety is a bird. Therefore Tweety can",     "form": "therefore", "surface_diff": "base"},
+        {"id": "bird_reorder",   "text": "Tweety is a bird. All birds can fly. So Tweety can",            "form": "reorder",   "surface_diff": "reorder"},
+        {"id": "bird_since",     "text": "Since Tweety is a bird, and all birds can fly, Tweety can",     "form": "since",     "surface_diff": "wording"},
+        {"id": "bird_given",     "text": "Given that all birds can fly and Tweety is a bird, Tweety can", "form": "given",     "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "fish_swim",
+      "semantic_label": "All fish can swim, Nemo is a fish, so Nemo can swim",
+      "prompts": [
+        {"id": "fish_therefore", "text": "All fish can swim. Nemo is a fish. Therefore Nemo can",     "form": "therefore", "surface_diff": "base"},
+        {"id": "fish_reorder",   "text": "Nemo is a fish. All fish can swim. So Nemo can",            "form": "reorder",   "surface_diff": "reorder"},
+        {"id": "fish_since",     "text": "Since Nemo is a fish, and all fish can swim, Nemo can",     "form": "since",     "surface_diff": "wording"},
+        {"id": "fish_given",     "text": "Given that all fish can swim and Nemo is a fish, Nemo can", "form": "given",     "surface_diff": "wording"}
+      ]
+    },
+    {
+      "group_id": "dogs_loyal",
+      "semantic_label": "All dogs are loyal, Rex is a dog, so Rex is loyal",
+      "prompts": [
+        {"id": "dog_therefore", "text": "All dogs are loyal. Rex is a dog. Therefore Rex is",      "form": "therefore", "surface_diff": "base"},
+        {"id": "dog_reorder",   "text": "Rex is a dog. All dogs are loyal. So Rex is",             "form": "reorder",   "surface_diff": "reorder"},
+        {"id": "dog_since",     "text": "Since Rex is a dog, and all dogs are loyal, Rex is",      "form": "since",     "surface_diff": "wording"},
+        {"id": "dog_given",     "text": "Given that all dogs are loyal and Rex is a dog, Rex is",  "form": "given",     "surface_diff": "wording"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1060 @@
+audit_id,example_id,task_family,semantic_task_id,surface_template_id,prompt_text,reference_answer,model_response,human_correct,human_extracted_answer,human_output_validity,human_notes
+audit_001,bench_00148,arithmetic,subtract_11_8,worded,"Start with 11, subtract 8.",3,"
+
+11 - 8 = 3
+
+Now, add 3 to 11.
+
+11 + 3 = 14
+
+So",,,,
+audit_002,bench_00048,arithmetic,add_3_9,equation,3 + 9 =,12," 12
+
+12 + 12 = 24
+
+24 + 24 = 48
+
+48 + 48",,,,
+audit_003,bench_00061,arithmetic,multiply_4_5,reorder,5 * 4 =,20," 20
+
+5 * 4 = 20
+
+5 * 4 = 20
+
+5 * 4 = 20
+
+5",,,,
+audit_004,bench_00114,arithmetic,multiply_8_6,equation,8 * 6 =,48," 48
+
+8 * 6 = 48
+
+8 * 6 = 48
+
+8 * 6 = 48
+
+8",,,,
+audit_005,bench_00144,arithmetic,subtract_11_8,equation,11 - 8 =,3," 3
+
+11 - 8 = 3
+
+11 - 8 = 3
+
+11 - 8 = 3
+
+11",,,,
+audit_006,bench_00010,arithmetic,add_5_3,worded,"Start with 5, add 3.",8,"
+
+Start with 5, add 3.
+
+Start with 5, add 3.
+
+Start with 5, add 3.
+
+Start",,,,
+audit_007,bench_00117,arithmetic,multiply_8_6,imperative,Calculate 8 times 6.,48,"
+
+Calculate 10 times 10.
+
+Calculate 10 times 100.
+
+Calculate 100 times 10.",,,,
+audit_008,bench_00033,arithmetic,add_9_8,imperative,Calculate 9 plus 8.,17,"
+
+Calculate 9 minus 8.
+
+Calculate 9 times 8.
+
+Calculate 9 divided by 8.
+
+Calculate 9 to the power",,,,
+audit_009,bench_00106,arithmetic,multiply_6_6,worded,"Start with 6, multiply 6.",36,"
+
+6 x 6 = 36
+
+Now, add 3 to 36.
+
+36 + 3 = 39
+
+Now",,,,
+audit_010,bench_00090,arithmetic,multiply_9_3,equation,9 * 3 =,27," 27
+
+9 * 3 = 27
+
+9 * 3 = 27
+
+9 * 3 = 27
+
+9",,,,
+audit_011,bench_00111,arithmetic,multiply_3_7,imperative,Calculate 3 times 7.,21,"
+
+Calculate 10 times 10.
+
+Calculate 100 times 100.
+
+Calculate 1000 times 1",,,,
+audit_012,bench_00062,arithmetic,multiply_4_5,question,What is 4 times 5?,20,"
+
+What is 3 times 4?
+
+What is 5 times 5?
+
+What is 6 times 6?
+
+What is 7",,,,
+audit_013,bench_00123,arithmetic,subtract_10_3,imperative,Calculate 10 minus 3.,7,"
+
+Step 1
+1 of 2
+
+$\begin{align*} 10-3&=7 \end{align*} $
+
+Result
+2",,,,
+audit_014,bench_00046,arithmetic,add_7_7,worded,"Start with 7, add 7.",14,"
+
+Start with 7, add 7.
+
+Start with 7, add 7.
+
+Start with 7, add 7.
+
+Start",,,,
+audit_015,bench_00137,arithmetic,subtract_15_9,given,"Given 15 and 9, compute 15 minus 9.",6,"
+
+Step 1
+1 of 2
+
+$\begin{align*} 15-9&=6 \end{align*} $
+
+Result
+2",,,,
+audit_016,bench_00138,arithmetic,subtract_20_12,equation,20 - 12 =,8," 8
+
+20 - 12 = 8
+
+20 - 12 = 8
+
+20 - 12 = 8",,,,
+audit_017,bench_00030,arithmetic,add_9_8,equation,9 + 8 =,17," 17
+
+17 + 17 = 34
+
+34 + 34 = 68
+
+68 + 68",,,,
+audit_018,bench_00036,arithmetic,add_1_9,equation,1 + 9 =,10, 10     2 + 8 = 10     3 + 7 = 10     4 + 6 = 10     5,,,,
+audit_019,bench_00002,arithmetic,add_2_3,question,What is 2 plus 3?,5,"
+
+What is 10 minus 5?
+
+What is 10 times 5?
+
+What is 10 divided by 5?
+
+",,,,
+audit_020,bench_00130,arithmetic,subtract_9_5,worded,"Start with 9, subtract 5.",4,"
+
+Start with 9, subtract 5.
+
+Start with 9, subtract 5.
+
+Start with 9, subtract 5.
+
+Start",,,,
+audit_021,bench_00081,arithmetic,multiply_5_7,imperative,Calculate 5 times 7.,35,"
+
+Calculate 10 times 10.
+
+Calculate 100 times 100.
+
+Calculate 1000 times 1",,,,
+audit_022,bench_00096,arithmetic,multiply_4_4,equation,4 * 4 =,16," 16
+
+4 * 4 = 16
+
+4 * 4 = 16
+
+4 * 4 = 16
+
+4",,,,
+audit_023,bench_00079,arithmetic,multiply_5_7,reorder,7 * 5 =,35," 35
+
+7 * 5 = 35
+
+7 * 5 = 35
+
+7 * 5 = 35
+
+7",,,,
+audit_024,bench_00027,arithmetic,add_8_5,imperative,Calculate 8 plus 5.,13,"
+
+Calculate 8 minus 5.
+
+Calculate 8 times 5.
+
+Calculate 8 divided by 5.
+
+Calculate 8 to the power",,,,
+audit_025,bench_00055,arithmetic,add_6_9,reorder,9 + 6 =,15," 15
+
+15 + 15 = 30
+
+30 + 15 = 45
+
+45 + 15",,,,
+audit_026,bench_00986,contradiction,consist_metals_gold,given_detect,"Given that all metals conduct electricity, and that gold is a metal, is there a contradiction?",no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+Gold is a metal, but it is not a good conductor of electricity.
+
+The",,,,
+audit_027,bench_00997,contradiction,consist_reptiles_snakes,consider_whether,Consider: No reptiles are mammals. Also: Snakes are reptiles. Do these statements contradict each other?,no," Explain.
+
+A 1.00-kg block is resting against a light, compressed spring at the bottom of a rough plane inclined at an angle of",,,,
+audit_028,bench_00976,contradiction,consist_dogs_rex,given_detect,"Given that all dogs are loyal, and that rex is a dog, is there a contradiction?",no,"
+
+I think the answer is no.
+
+I think that the answer is yes.
+
+I think that the answer is yes.
+
+I think that the answer",,,,
+audit_029,bench_00905,contradiction,contra_dogs_loyal,direct_question,All dogs are loyal. Some dogs are not loyal. Is there a contradiction?,yes,"
+
+The answer is no.
+
+The loyalty of a dog is not absolute.
+
+The loyalty of a dog is not absolute.
+
+The loyalty of a dog",,,,
+audit_030,bench_00985,contradiction,consist_metals_gold,direct_question,All metals conduct electricity. Gold is a metal. Is there a contradiction?,no," Explain.
+
+A 100-W lightbulb is placed in a cylinder equipped with a moveable piston. The lightbulb is turned on for 0",,,,
+audit_031,bench_00991,contradiction,consist_humans_socrates,given_detect,"Given that all humans are mortal, and that socrates is human, is there a contradiction?",no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The fact that all humans are mortal does not imply that socrates is mortal.
+
+",,,,
+audit_032,bench_01000,contradiction,consist_insects_ants,direct_question,No insects have bones. Ants are insects. Is there a contradiction?,no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The word ""bone"" is used in two different ways.
+
+1. The word",,,,
+audit_033,bench_01002,contradiction,consist_insects_ants,consider_whether,Consider: No insects have bones. Also: Ants are insects. Do these statements contradict each other?,no," Explain.
+
+A $1.00-\mathrm{kg}$ block of copper at $20.0^{\circ} \mathrm{C}$ is",,,,
+audit_034,bench_00971,contradiction,consist_birds_eagles,given_detect,"Given that all birds can fly, and that eagles are birds, is there a contradiction?",no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The word ""eagle"" is a common name for a number of different species of birds",,,,
+audit_035,bench_01001,contradiction,consist_insects_ants,given_detect,"Given that no insects have bones, and that ants are insects, is there a contradiction?",no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The word ""bone"" is used in two different ways.
+
+1. The word",,,,
+audit_036,bench_00982,contradiction,consist_roses_colors,consider_whether,Consider: Some roses are red. Also: Some roses are white. Do these statements contradict each other?,no," Explain.
+
+Step 1
+1 of 2
+
+No, they do not contradict each other.
+
+Result
+2 of 2
+
+No, they",,,,
+audit_037,bench_00937,contradiction,contra_fire_hot,consider_whether,Consider: All fire is hot. Also: Some fire is not hot. Do these statements contradict each other?,yes," Explain.
+
+A 1.00-kg block of copper at $20.0^{\circ} \mathrm{C}$ is dropped into a",,,,
+audit_038,bench_00911,contradiction,contra_roses_red,given_detect,"Given that all roses are red, and that some roses are not red, is there a contradiction?",yes,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The statement ""all roses are red"" is true, but the statement ""some roses",,,,
+audit_039,bench_00920,contradiction,contra_squares_sides,direct_question,All squares have four sides. Some squares do not have four sides. Is there a contradiction?,yes," Explain.
+
+Step 1
+1 of 2
+
+No, there is no contradiction.
+
+A square is a quadrilateral with four sides.
+
+A square",,,,
+audit_040,bench_00965,contradiction,consist_cats_mammals_chain,direct_question,All cats are mammals. All mammals are animals. Is there a contradiction?,no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The statement ""All cats are mammals"" is true.
+
+The statement ""All mammals",,,,
+audit_041,bench_00932,contradiction,contra_ice_cold,consider_whether,Consider: All ice is cold. Also: Some ice is not cold. Do these statements contradict each other?,yes," Explain.
+
+A 1.00-kg block of copper at $20.0^{\circ} \mathrm{C}$ is dropped into a",,,,
+audit_042,bench_01005,contradiction,consist_shapes_sides,direct_question,All squares have four sides. All rectangles have four sides. Is there a contradiction?,no," Explain.
+
+Step 1
+1 of 2
+
+No, there is no contradiction.
+
+A square is a special type of rectangle.
+
+Result
+",,,,
+audit_043,bench_00940,contradiction,contra_reptiles_mammals,direct_question,No reptiles are mammals. Some reptiles are mammals. Is there a contradiction?,yes,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The term ""mammal"" is used in two different ways.
+
+1. The",,,,
+audit_044,bench_00955,contradiction,contra_rocks_alive,direct_question,No rocks are alive. Some rocks are alive. Is there a contradiction?,yes,"
+
+The answer is no.
+
+The rocks are alive in the sense that they are alive in the sense that they are alive in the sense that they are alive",,,,
+audit_045,bench_00897,contradiction,contra_birds_fly,consider_whether,Consider: All birds can fly. Also: Some birds cannot fly. Do these statements contradict each other?,yes," Explain.
+
+A $1.00-\mathrm{kg}$ block of copper at $20.0^{\circ} \mathrm{C}$ is",,,,
+audit_046,bench_00995,contradiction,consist_reptiles_snakes,direct_question,No reptiles are mammals. Snakes are reptiles. Is there a contradiction?,no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The word ""mammal"" is used in two different ways.
+
+1. The",,,,
+audit_047,bench_01012,contradiction,consist_hot_things,consider_whether,Consider: All fire is hot. Also: The sun is hot. Do these statements contradict each other?,no,"
+
+[Answer 1]
+
+No, they don't.
+
+The first statement is true, but the second is false.
+
+The first statement is",,,,
+audit_048,bench_00975,contradiction,consist_dogs_rex,direct_question,All dogs are loyal. Rex is a dog. Is there a contradiction?,no,"
+
+The answer is no.
+
+Rex is a dog.
+
+Rex is a dog.
+
+Rex is a dog.
+
+Rex is a dog.
+
+Rex",,,,
+audit_049,bench_00981,contradiction,consist_roses_colors,given_detect,"Given that some roses are red, and that some roses are white, is there a contradiction?",no,"
+
+[Answer 1]
+
+No, there is no contradiction.
+
+The statement ""some roses are red"" is true, and the statement ""some roses",,,,
+audit_050,bench_00977,contradiction,consist_dogs_rex,consider_whether,Consider: All dogs are loyal. Also: Rex is a dog. Do these statements contradict each other?,no," Explain.
+
+The following table shows the number of cell phone subscriptions in the United States for selected years.
+
+$\begin{array}{c|c} \",,,,
+audit_051,bench_00165,multi_step_arithmetic,multi_add_9_1_6,question,What is 9 plus 1 plus 6?,16,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_052,bench_00174,multi_step_arithmetic,multi_add_6_2_7,equation,6 + 2 + 7 =,15," 15
+
+15 + 15 = 30
+
+30 + 15 = 45
+
+45 + 15",,,,
+audit_053,bench_00207,multi_step_arithmetic,multi_add_10_3_7,question,What is 10 plus 3 plus 7?,20,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_054,bench_00243,multi_step_arithmetic,multi_multiply_2_3_4,question,What is 2 times 3 times 4?,24,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm having trouble with",,,,
+audit_055,bench_00241,multi_step_arithmetic,multi_multiply_2_3_4,equation_parens,2 * (3 * 4) =,24," 24
+
+2 * (3 * 4) = 24
+
+2 * (3 * 4) = 24
+
+2 *",,,,
+audit_056,bench_00171,multi_step_arithmetic,multi_add_3_4_5,question,What is 3 plus 4 plus 5?,12,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_057,bench_00256,multi_step_arithmetic,multi_multiply_3_3_3,given_then,"Given 3, multiply 3, then multiply 3. What is the total?",27,"
+
+Given 3, multiply 3, then multiply 3. What is the total?
+
+Given 3, multiply 3, then multiply 3",,,,
+audit_058,bench_00203,multi_step_arithmetic,multi_add_1_9_2,reverse_given,"Given 2, add 9, then add 1. What is the result?",12,"
+
+[Answer 1]
+
+The answer is 12.
+
+2 + 9 = 11
+
+11 + 1 = 1",,,,
+audit_059,bench_00261,multi_step_arithmetic,multi_multiply_2_4_5,question,What is 2 times 4 times 5?,40,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm having trouble with",,,,
+audit_060,bench_00232,multi_step_arithmetic,multi_add_4_2_6_5,given_then,"Given 4, add 2, then add 6, then add 5. What is the total?",17,"
+
+Given 1, add 2, then add 3, then add 4. What is the total?
+
+Given 1, add 2",,,,
+audit_061,bench_00230,multi_step_arithmetic,multi_add_4_2_6_5,step_by_step,"Start with 4, add 2, add 6, add 5.",17,"
+
+The answer is 17.
+
+The answer is 17.
+
+The answer is 17.
+
+The answer is 17.",,,,
+audit_062,bench_00212,multi_step_arithmetic,multi_add_2_5_4_3,step_by_step,"Start with 2, add 5, add 4, add 3.",14,"
+
+The answer is 14.
+
+The answer is 14.
+
+The answer is 14.
+
+The answer is 14.",,,,
+audit_063,bench_00214,multi_step_arithmetic,multi_add_2_5_4_3,given_then,"Given 2, add 5, then add 4, then add 3. What is the total?",14,"
+
+Given 2, add 5, then add 4, then add 3. What is the total?
+
+Given 2, add 5",,,,
+audit_064,bench_00265,multi_step_arithmetic,multi_multiply_1_7_6,equation_parens,1 * (7 * 6) =,42," 42
+
+2 * (8 * 7) = 112
+
+3 * (9 * 8) = 216
+
+",,,,
+audit_065,bench_00169,multi_step_arithmetic,multi_add_3_4_5,equation_parens,3 + (4 + 5) =,12," 3 + 9 = 12
+
+(3 + 4) + 5 = 7 + 5 = 12
+
+3 +",,,,
+audit_066,bench_00188,multi_step_arithmetic,multi_add_4_6_1,step_by_step,"Start with 4, add 6, add 1.",11,"
+
+The answer is 11.
+
+The answer is 11.
+
+The answer is 11.
+
+The answer is 11.",,,,
+audit_067,bench_00252,multi_step_arithmetic,multi_multiply_3_3_3,equation,3 * 3 * 3 =,27," 27
+
+3 * 3 * 3 = 27
+
+3 * 3 * 3 = 27
+
+3 * 3",,,,
+audit_068,bench_00217,multi_step_arithmetic,multi_add_1_6_8_2,equation_parens,1 + (6 + 8 + 2) =,17," 1 + 16 = 17
+
+17 + (1 + 9 + 3) = 17 + 13 =",,,,
+audit_069,bench_00157,multi_step_arithmetic,multi_add_2_8_4,equation_parens,2 + (8 + 4) =,14," 14
+
+2 + (8 + 4) = 14
+
+2 + (8 + 4) = 14
+
+2 +",,,,
+audit_070,bench_00263,multi_step_arithmetic,multi_multiply_2_4_5,reverse_given,"Given 5, multiply 4, then multiply 2. What is the result?",40,"
+
+[Answer 1]
+
+The answer is 40.
+
+The first step is to multiply 4 by 5, which is 20",,,,
+audit_071,bench_00251,multi_step_arithmetic,multi_multiply_5_2_3,reverse_given,"Given 3, multiply 2, then multiply 5. What is the result?",30,"
+
+[Answer 1]
+
+The answer is 30.
+
+The first step is to multiply 2 by 3, which is 6.",,,,
+audit_072,bench_00227,multi_step_arithmetic,multi_add_3_7_1_9,reverse_given,"Given 9, add 1, then add 7, then add 3. What is the result?",20,"
+
+[Answer 1]
+
+The answer is 11.
+
+The first step is to add 1 to 9, which is 10",,,,
+audit_073,bench_00184,multi_step_arithmetic,multi_add_8_3_9,given_then,"Given 8, add 3, then add 9. What is the total?",20,"
+
+Given 12, add 1, then add 10. What is the total?
+
+Given 15, add 1, then",,,,
+audit_074,bench_00160,multi_step_arithmetic,multi_add_2_8_4,given_then,"Given 2, add 8, then add 4. What is the total?",14,"
+
+Given 1, add 2, then add 3. What is the total?
+
+Given 1, add 2, then add 3",,,,
+audit_075,bench_00153,multi_step_arithmetic,multi_add_5_7_3,question,What is 5 plus 7 plus 3?,15,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_076,bench_00564,relational,rel3_faster_Sam_Tara_Uma,given_therefore,"Given that Sam is faster than Tara, and Tara is faster than Uma, therefore the fastest is",Sam," Sam.
+
+Given that Sam is faster than Tara, and Tara is faster than Uma, therefore the fastest is Sam.
+
+Given that Sam is faster than Tara",,,,
+audit_077,bench_00701,relational,rel4_faster_Ivy_Jack_Kate_Leo,reorder_who,Kate is faster than Leo. Ivy is faster than Jack. Jack is faster than Kate. Who is the fastest?,Ivy,"
+
+[Answer 1]
+
+The answer is <strong>Kate</strong>.
+
+The first thing to note is that the order of the characters is not important.",,,,
+audit_078,bench_00546,relational,rel3_faster_Jack_Kate_Leo,given_therefore,"Given that Jack is faster than Kate, and Kate is faster than Leo, therefore the fastest is",Jack," Jack.
+
+Jack is faster than Kate, and Kate is faster than Leo, therefore the fastest is Jack.
+
+Jack is faster than Kate, and Kate is",,,,
+audit_079,bench_00708,relational,rel4_heavier_Alice_Bob_Carol_Dan,given,"Given that Alice is heavier than Bob, Bob is heavier than Carol, and Carol is heavier than Dan, the heaviest is",Alice," Dan.
+
+Given that Alice is heavier than Bob, Bob is heavier than Carol, and Carol is heavier than Dan, the heaviest is Dan.
+
+Given that",,,,
+audit_080,bench_00467,relational,rel3_older_Sam_Tara_Uma,reorder_who,Tara is older than Uma. Sam is older than Tara. Who is the oldest?,Sam,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_081,bench_00670,relational,rel4_older_Alice_Bob_Carol_Dan,statement_who,Alice is older than Bob. Bob is older than Carol. Carol is older than Dan. Who is the oldest?,Alice,"
+
+[Answer 1]
+
+The oldest is Dan.
+
+<blockquote>Alice is older than Bob.
+Bob is older than Carol.
+Carol is older than",,,,
+audit_082,bench_00525,relational,rel3_taller_Vera_Will_Xena,narrative,"In a group of three people, Vera is taller than Will, and Will is taller than Xena. The tallest person is",Vera," Xena. Who is the shortest?
+
+[Answer 1]
+
+The answer is <strong>Xena</strong>.
+
+The only way to get the answer",,,,
+audit_083,bench_00605,relational,rel3_heavier_Paul_Quinn_Rita,reorder_who,Quinn is heavier than Rita. Paul is heavier than Quinn. Who is the heaviest?,Paul,"
+
+[Answer 1]
+
+Paul is the heaviest.
+
+<blockquote>Paul is heavier than Quinn.
+Paul is heavier than Rita.
+Therefore, Paul is",,,,
+audit_084,bench_00635,relational,rel3_stronger_Grace_Hank_Ivy,reorder_who,Hank is stronger than Ivy. Grace is stronger than Hank. Who is the strongest?,Grace,"
+
+Hank is stronger than Ivy. Grace is stronger than Hank. Who is the strongest?
+
+Hank is stronger than Ivy. Grace is stronger than Hank. Who",,,,
+audit_085,bench_00599,relational,rel3_heavier_Mia_Noah_Olivia,reorder_who,Noah is heavier than Olivia. Mia is heavier than Noah. Who is the heaviest?,Mia,"
+
+[Answer 1]
+
+Noah is heavier than Olivia.
+
+Mia is heavier than Noah.
+
+So, Noah is heavier than Mia.
+
+So,",,,,
+audit_086,bench_00477,relational,rel3_older_Vera_Will_Xena,narrative,"In a group of three people, Vera is older than Will, and Will is older than Xena. The oldest person is",Vera," Xena. Who is the youngest person?
+
+[Answer 1]
+
+The answer is <strong>Xena</strong>.
+
+The only way to get this",,,,
+audit_087,bench_00446,relational,rel3_older_Grace_Hank_Ivy,if_then,"If Grace is older than Hank, and Hank is older than Ivy, then the oldest is",Grace," Grace.
+
+If Grace is older than Hank, and Hank is older than Ivy, then the oldest is Grace.
+
+If Grace is older than Hank, and",,,,
+audit_088,bench_00620,relational,rel3_heavier_Vera_Will_Xena,if_then,"If Vera is heavier than Will, and Will is heavier than Xena, then the heaviest is",Vera," Vera.
+
+If Vera is heavier than Will, and Will is heavier than Xena, then the heaviest is Vera.
+
+If Vera is heavier than Will,",,,,
+audit_089,bench_00603,relational,rel3_heavier_Mia_Noah_Olivia,narrative,"In a group of three people, Mia is heavier than Noah, and Noah is heavier than Olivia. The heaviest person is",Mia," Mia.
+
+In a group of three people, Mia is heavier than Noah, and Noah is heavier than Olivia. The heaviest person is Mia.
+
+In a",,,,
+audit_090,bench_00459,relational,rel3_older_Mia_Noah_Olivia,narrative,"In a group of three people, Mia is older than Noah, and Noah is older than Olivia. The oldest person is",Mia," Mia. How old is Mia?
+
+[Answer 1]
+
+<strong>Answer:</strong>
+
+<blockquote>Mia is 18 years old.</blockquote>
+
+<strong>Explanation",,,,
+audit_091,bench_00514,relational,rel3_taller_Sam_Tara_Uma,statement_who,Sam is taller than Tara. Tara is taller than Uma. Who is the tallest?,Sam,"
+
+[Answer 1]
+
+Sam is the tallest.
+
+<blockquote>Sam is taller than Tara.
+Tara is taller than Uma.
+So Sam is taller",,,,
+audit_092,bench_00506,relational,rel3_taller_Mia_Noah_Olivia,if_then,"If Mia is taller than Noah, and Noah is taller than Olivia, then the tallest is",Mia," Mia.
+
+If Mia is taller than Noah, and Noah is taller than Olivia, then the tallest is Noah.
+
+If Mia is taller than Noah, and",,,,
+audit_093,bench_00699,relational,rel4_faster_Eve_Frank_Grace_Hank,given,"Given that Eve is faster than Frank, Frank is faster than Grace, and Grace is faster than Hank, the fastest is",Eve," Hank.
+
+Given that Eve is faster than Frank, Frank is faster than Grace, and Grace is faster than Hank, the fastest is Hank.
+
+Given that",,,,
+audit_094,bench_00431,relational,rel3_older_Alice_Bob_Carol,reorder_who,Bob is older than Carol. Alice is older than Bob. Who is the oldest?,Alice,"
+
+[Answer 1]
+
+Alice is the oldest.
+
+<blockquote>Alice is older than Bob.
+Bob is older than Carol.
+Alice is older than",,,,
+audit_095,bench_00531,relational,rel3_faster_Alice_Bob_Carol,narrative,"In a group of three people, Alice is faster than Bob, and Bob is faster than Carol. The fastest person is",Alice," Alice. The slowest person is Carol.
+
+Alice and Carol are both faster than Bob.
+
+Alice is faster than Carol.
+
+Bob is faster than Carol.",,,,
+audit_096,bench_00495,relational,rel3_taller_Grace_Hank_Ivy,narrative,"In a group of three people, Grace is taller than Hank, and Hank is taller than Ivy. The tallest person is",Grace," Grace.
+
+Grace is 5'10"" tall.
+
+Hank is 5'9"" tall.
+
+Ivy is 5'8"" tall",,,,
+audit_097,bench_00569,relational,rel3_faster_Vera_Will_Xena,reorder_who,Will is faster than Xena. Vera is faster than Will. Who is the fastest?,Vera,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_098,bench_00711,relational,rel4_heavier_Eve_Frank_Grace_Hank,given,"Given that Eve is heavier than Frank, Frank is heavier than Grace, and Grace is heavier than Hank, the heaviest is",Eve," Hank.
+
+Given that Eve is heavier than Frank, Frank is heavier than Grace, and Grace is heavier than Hank, the heaviest is Hank.
+
+Given that",,,,
+audit_099,bench_00586,relational,rel3_heavier_Grace_Hank_Ivy,statement_who,Grace is heavier than Hank. Hank is heavier than Ivy. Who is the heaviest?,Grace,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm curious.
+
+",,,,
+audit_100,bench_00632,relational,rel3_stronger_Dan_Eve_Frank,if_then,"If Dan is stronger than Eve, and Eve is stronger than Frank, then the strongest is",Dan," Dan.
+
+If Dan is stronger than Eve, and Eve is stronger than Frank, then the strongest is Eve.
+
+If Dan is stronger than Eve, and",,,,
+audit_101,bench_00787,set_inclusion,incl_pines_trees,given,"Given that all pines are trees, are pines trees?",yes,"
+
+[Answer 1]
+
+No, pines are not trees.
+
+Pines are a type of conifer, which is a type of gymnosperm",,,,
+audit_102,bench_00739,set_inclusion,incl_dogs_mammals,given,"Given that all dogs are mammals, are dogs mammals?",yes,"
+
+[Answer 1]
+
+Yes, dogs are mammals.
+
+The term ""mammal"" is used to describe a group of animals that have mammary glands",,,,
+audit_103,bench_00888,set_inclusion,incl_inv_canines_felines,does_follow,All canines are felines. Does it follow that all felines are canines?,no,"
+
+The answer is no.
+
+The term “canine” is used to refer to the family of mammals that includes dogs, wolves, coyotes, and foxes",,,,
+audit_104,bench_00778,set_inclusion,incl_oaks_trees,are_question,All oaks are trees. Are oaks trees?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to ask this question, but I'm going to",,,,
+audit_105,bench_00748,set_inclusion,incl_sparrows_birds,are_question,All sparrows are birds. Are sparrows birds?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to ask this question, but I'm curious.",,,,
+audit_106,bench_00757,set_inclusion,incl_salmon_fish,given,"Given that all salmon are fish, are salmon fish?",yes,"
+
+[Answer 1]
+
+Yes, salmon are fish.
+
+The word ""fish"" is a general term for any animal that lives in water and breathes",,,,
+audit_107,bench_00829,set_inclusion,incl_apples_fruits,given,"Given that all apples are fruits, are apples fruits?",yes,"
+
+[Answer 1]
+
+No, apples are not fruits.
+
+The word ""fruit"" is used in two different ways.
+
+1. A fruit",,,,
+audit_108,bench_00772,set_inclusion,incl_tulips_flowers,are_question,All tulips are flowers. Are tulips flowers?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to ask this question, but I'm curious.",,,,
+audit_109,bench_00805,set_inclusion,incl_wolves_canines,given,"Given that all wolves are canines, are wolves canines?",yes,"
+
+[Answer 1]
+
+No, wolves are not canines.
+
+Canines are a group of mammals that have a single pair of canine teeth in",,,,
+audit_110,bench_00868,set_inclusion,incl_inv_trees_oaks,does_follow,All trees are oaks. Does it follow that all oaks are trees?,no,"
+
+[Answer 1]
+
+No, it does not follow.
+
+The statement is false.
+
+The statement is not true because there are trees that are",,,,
+audit_111,bench_00864,set_inclusion,incl_inv_flowers_roses,does_follow,All flowers are roses. Does it follow that all roses are flowers?,no,"
+
+[User 0001]
+
+I'm not sure if this is a good question or not, but I'm going to ask it",,,,
+audit_112,bench_00832,set_inclusion,incl_carrots_vegetables,are_question,All carrots are vegetables. Are carrots vegetables?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to ask this question, but I'm curious.",,,,
+audit_113,bench_00856,set_inclusion,incl_inv_birds_eagles,does_follow,All birds are eagles. Does it follow that all eagles are birds?,no,"
+
+[Answer 1]
+
+No, it does not follow.
+
+The statement is false.
+
+The statement is false because there are birds that are not",,,,
+audit_114,bench_00880,set_inclusion,incl_inv_metals_gems,does_follow,All metals are gems. Does it follow that all gems are metals?,no,"
+
+[Answer 1]
+
+No.
+
+A gem is a mineral that is used as a decorative stone.
+
+A metal is a mineral that is used",,,,
+audit_115,bench_00742,set_inclusion,incl_eagles_birds,are_question,All eagles are birds. Are eagles birds?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to post this, but I'm not sure where",,,,
+audit_116,bench_00844,set_inclusion,incl_diamonds_gems,are_question,All diamonds are gems. Are diamonds gems?,yes,"
+
+[User 0001]
+
+I'm not sure if this is the right place to ask this question, but I'm curious.",,,,
+audit_117,bench_00872,set_inclusion,incl_inv_insects_ants,does_follow,All insects are ants. Does it follow that all ants are insects?,no,"
+
+[Answer 1]
+
+No, it does not follow.
+
+The ant is a member of the order Hymenoptera, which is a member of the",,,,
+audit_118,bench_00876,set_inclusion,incl_inv_fruits_vegetables,does_follow,All fruits are vegetables. Does it follow that all vegetables are fruits?,no,"
+
+[Answer 1]
+
+No, it does not follow.
+
+The reason is that the definition of a fruit is a mature ovary of a plant that",,,,
+audit_119,bench_00852,set_inclusion,incl_inv_mammals_cats,does_follow,All mammals are cats. Does it follow that all cats are mammals?,no,"
+
+[Answer 1]
+
+No, it does not follow.
+
+The statement ""All mammals are cats"" is true, but the statement ""All cats",,,,
+audit_120,bench_00733,set_inclusion,incl_cats_mammals,given,"Given that all cats are mammals, are cats mammals?",yes,"
+
+[Answer 1]
+
+Yes, cats are mammals.
+
+The term ""mammal"" is used to describe a group of animals that have mammary glands",,,,
+audit_121,bench_00736,set_inclusion,incl_dogs_mammals,are_question,All dogs are mammals. Are dogs mammals?,yes,"
+
+All dogs are mammals. Are dogs mammals?
+
+All dogs are mammals. Are dogs mammals?
+
+All dogs are mammals. Are dogs mammals?
+
+All",,,,
+audit_122,bench_00763,set_inclusion,incl_trout_fish,given,"Given that all trout are fish, are trout fish?",yes,"
+
+[Answer 1]
+
+No, trout are not fish.
+
+Trout are a type of fish, but they are not all fish.
+
+Trout are",,,,
+audit_123,bench_00766,set_inclusion,incl_roses_flowers,are_question,All roses are flowers. Are roses flowers?,yes,"
+
+[User 0001]
+
+I'm not sure if this is a good question or not, but I'm curious.
+
+I",,,,
+audit_124,bench_00884,set_inclusion,incl_inv_reptiles_amphibians,does_follow,All reptiles are amphibians. Does it follow that all amphibians are reptiles?,no," Explain.
+
+A 100-kg mass is pulled along a frictionless surface by a horizontal force $\vec{F}$ such that its acceleration is",,,,
+audit_125,bench_00817,set_inclusion,incl_snakes_reptiles,given,"Given that all snakes are reptiles, are snakes reptiles?",yes,"
+
+[Answer 1]
+
+No, snakes are not reptiles.
+
+Reptiles are a group of animals that have a number of characteristics in common, including",,,,
+audit_126,bench_00325,syllogistic,syl_owls_wise,since,"Since all owls are wise animals, and Hedwig is a owl, Hedwig is",wise," wise.
+
+Hedwig is a owl, and owls are wise animals.
+
+Hedwig is a owl, and owls are wise animals.
+
+Hedwig is",,,,
+audit_127,bench_00386,syllogistic,syl_salmon_migratory,given,"Given that all salmon are migratory fish, and given that the sockeye is a salmon, it follows that the sockeye is",migratory," a migratory fish.
+
+The sockeye is a salmon that migrates from the ocean to the freshwater lakes and rivers of the Pacific Northwest. The sockeye is",,,,
+audit_128,bench_00273,syllogistic,syl_cats_animals,because,Luna is a animals because Luna is a cat and all cats are animals.,animals,"
+
+Luna is a cat because she has fur and she has a tail.
+
+Luna is a cat because she has a tail and she has fur.
+
+Luna",,,,
+audit_129,bench_00408,syllogistic,syl_trans_ants_arthropods,reorder,All insects are arthropods. All ants are insects. the worker ant is a ant. Therefore the worker ant is,arthropods," an insect.
+
+The answer is:
+
+<strong>All insects are arthropods.</strong>
+
+<strong>All ants are insects.</strong>
+
+<strong>The worker ant is an",,,,
+audit_130,bench_00392,syllogistic,syl_trans_cats_animals,reorder,All mammals are animals. All cats are mammals. Luna is a cat. Therefore Luna is,animals," a mammal.
+
+All mammals are animals. All cats are mammals. Luna is a cat. Therefore Luna is an animal.
+
+All mammals are animals. All",,,,
+audit_131,bench_00365,syllogistic,syl_ants_hardworking,if_then,"If all ants are hardworking insects, and the worker ant is a ant, then the worker ant is",hardworking," a ant.
+
+The ant is a ant, and the ant is a ant.
+
+The ant is a ant, and the ant is a ant.
+
+",,,,
+audit_132,bench_00371,syllogistic,syl_bees_pollinators,if_then,"If all bees are pollinators, and the honeybee is a bee, then the honeybee is",pollinators," a pollinator.
+
+The honeybee is a pollinator.
+
+The honeybee is a bee.
+
+The honeybee is a pollinator.
+
+The",,,,
+audit_133,bench_00420,syllogistic,syl_trans_eagles_birds,reorder,All raptors are birds. All eagles are raptors. the bald eagle is a eagle. Therefore the bald eagle is,birds," a raptor.
+
+The bald eagle is a raptor.
+
+The bald eagle is a raptor.
+
+The bald eagle is a raptor.
+
+The bald eagle is",,,,
+audit_134,bench_00375,syllogistic,syl_snakes_reptiles,because,Kaa is a reptiles because Kaa is a snake and all snakes are reptiles.,reptiles,"
+
+Kaa is a reptile because he is a snake and snakes are reptiles.
+
+Kaa is a reptile because he is a snake and snakes are reptiles.",,,,
+audit_135,bench_00395,syllogistic,syl_trans_roses_plants,since,"Since all roses are flowers, and all flowers are plants, and the red rose is a rose, the red rose is",plants," a plant.
+
+The red rose is a plant.
+
+The red rose is a plant.
+
+The red rose is a plant.
+
+The red rose is",,,,
+audit_136,bench_00292,syllogistic,syl_dogs_loyal,reorder,Rex is a dog. All dogs are loyal companions. Therefore Rex is,loyal," a loyal companion.
+
+Rex is a dog. All dogs are loyal companions. Therefore Rex is a loyal companion.
+
+Rex is a dog. All dogs are",,,,
+audit_137,bench_00362,syllogistic,syl_ants_hardworking,given,"Given that all ants are hardworking insects, and given that the worker ant is a ant, it follows that the worker ant is",hardworking," a hardworking insect.
+
+Given that all ants are hardworking insects, and given that the worker ant is a ant, it follows that the worker ant is a hardworking",,,,
+audit_138,bench_00405,syllogistic,syl_trans_salmon_aquatic animals,given,"Given that all salmon are fish, that all fish are aquatic animals, and that the sockeye is a salmon, it follows that the sockeye is",aquatic," an aquatic animal.
+
+The sockeye is a salmon.
+
+The sockeye is a salmon.
+
+The sockeye is a salmon.
+
+The sockeye",,,,
+audit_139,bench_00382,syllogistic,syl_frogs_amphibians,reorder,Kermit is a frog. All frogs are amphibians. Therefore Kermit is,amphibians," an amphibian.
+
+Kermit is a frog. All frogs are amphibians. Therefore Kermit is an amphibian.
+
+Kermit is a frog. All",,,,
+audit_140,bench_00396,syllogistic,syl_trans_roses_plants,reorder,All flowers are plants. All roses are flowers. the red rose is a rose. Therefore the red rose is,plants," a flower.
+
+The red rose is a flower.
+
+The red rose is a flower.
+
+The red rose is a flower.
+
+The red rose is",,,,
+audit_141,bench_00358,syllogistic,syl_whales_marine,reorder,Moby is a whale. All whales are marine mammals. Therefore Moby is,marine," a marine mammal.
+
+Moby is a whale. All whales are marine mammals. Therefore Moby is a marine mammal.
+
+Moby is a whale. All",,,,
+audit_142,bench_00428,syllogistic,syl_trans_dolphins_marine mammals,reorder,All cetaceans are marine mammals. All dolphins are cetaceans. Flipper is a dolphin. Therefore Flipper is,marine," a cetacean.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer",,,,
+audit_143,bench_00285,syllogistic,syl_fish_aquatic,because,Nemo is a aquatic animals because Nemo is a fish and all fish are aquatic animals.,aquatic,"
+
+Nemo is a fish because he is a fish.
+
+Nemo is a fish because he is a fish.
+
+Nemo is a fish because he is a fish",,,,
+audit_144,bench_00381,syllogistic,syl_frogs_amphibians,because,Kermit is a amphibians because Kermit is a frog and all frogs are amphibians.,amphibians,"
+
+Kermit is a frog.
+
+Kermit is a frog.
+
+Kermit is a frog.
+
+Kermit is a frog.
+
+Kermit is",,,,
+audit_145,bench_00429,syllogistic,syl_trans_dolphins_marine mammals,given,"Given that all dolphins are cetaceans, that all cetaceans are marine mammals, and that Flipper is a dolphin, it follows that Flipper is",marine," a marine mammal.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer is yes.
+
+The answer is",,,,
+audit_146,bench_00313,syllogistic,syl_bears_strong,since,"Since all bears are strong animals, and Baloo is a bear, Baloo is",strong," strong.
+
+Baloo is a bear, and bears are strong.
+
+Since all bears are strong, and Baloo is a bear, Baloo is strong",,,,
+audit_147,bench_00387,syllogistic,syl_salmon_migratory,because,the sockeye is a migratory fish because the sockeye is a salmon and all salmon are migratory fish.,migratory,"
+
+Explanation:
+
+The sockeye is a salmon and all salmon are migratory fish.
+
+Explanation:
+
+The sockeye is a salmon and all salmon are migratory",,,,
+audit_148,bench_00303,syllogistic,syl_eagles_birds,because,the bald eagle is a birds of prey because the bald eagle is a eagle and all eagles are birds of prey.,birds,"
+
+Explanation:
+
+The bald eagle is a bird of prey because it is a bird of prey.
+
+Explanation:
+
+The bald eagle is a bird of prey",,,,
+audit_149,bench_00296,syllogistic,syl_roses_flowers,given,"Given that all roses are flowers, and given that the red rose is a rose, it follows that the red rose is",flowers," a flower.
+
+The above statement is an example of which of the following?
+
+A. Deductive reasoning
+
+B. Inductive reasoning
+
+C. Both",,,,
+audit_150,bench_00369,syllogistic,syl_bees_pollinators,because,the honeybee is a pollinators because the honeybee is a bee and all bees are pollinators.,pollinators,"
+
+Explanation:
+
+The honeybee is a pollinators because the honeybee is a bee and all bees are pollinators.
+
+Explanation:
+
+The honeybee",,,,

@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "reason": "Conservative exclusions found during the outcome-label audit. Rows are excluded when the prompt changes the task while retaining the old answer, asks for an answer type incompatible with answer_id/parser, or reverses the target polarity without reversing answer_id.",
+  "expected_excluded_count": 185,
+  "rules": [
+    {
+      "where": {
+        "task_family": "set_inclusion",
+        "surface_template_id": ["therefore", "since", "knowing", "boolean", "therefore_invalid", "boolean_invalid"]
+      },
+      "reason": "The completion templates expect a category word while answer_id/parser expect yes/no; the true/false templates likewise use an incompatible response type, and some invalid boolean prompts state a fact that is actually true."
+    },
+    {
+      "where": {
+        "task_family": "set_inclusion",
+        "reasoning_graph_id": "invalid_converse",
+        "surface_template_id": "are_question"
+      },
+      "reason": "The prompt states a generally false premise and then asks a real-world question whose true answer can conflict with the intended non-entailment label; unlike does_follow, it does not clearly ask about entailment."
+    },
+    {
+      "where": {
+        "task_family": "contradiction",
+        "surface_template_id": ["true_false", "can_both"]
+      },
+      "reason": "The true/false proposition is made true by inserting the known class label, while can_both reverses the yes/no polarity; both retain the direct-question answer_id."
+    },
+    {
+      "where": {
+        "task_family": "syllogistic",
+        "surface_template_id": "because"
+      },
+      "reason": "The prompt is already a complete declarative conclusion rather than a completion or question, so generated continuation text cannot be interpreted consistently as an answer to answer_id."
+    }
+  ],
+  "examples": [
+    {"example_id": "bench_00121", "prompt_text": "3 - 10 =", "stored_answer": "7", "actual_answer": "-7"},
+    {"example_id": "bench_00127", "prompt_text": "5 - 9 =", "stored_answer": "4", "actual_answer": "-4"},
+    {"example_id": "bench_00133", "prompt_text": "9 - 15 =", "stored_answer": "6", "actual_answer": "-6"},
+    {"example_id": "bench_00139", "prompt_text": "12 - 20 =", "stored_answer": "8", "actual_answer": "-8"},
+    {"example_id": "bench_00145", "prompt_text": "8 - 11 =", "stored_answer": "3", "actual_answer": "-3"}
+  ]
+}

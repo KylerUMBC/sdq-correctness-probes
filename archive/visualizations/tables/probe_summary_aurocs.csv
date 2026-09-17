@@ -1,0 +1,10 @@
+model,metric,auroc
+h_0_linear,Pooled,0.9157310620725255
+h_0_linear,Within-family,0.8437711892992066
+z_0_linear,Pooled,0.8633372048006195
+z_0_linear,Within-family,0.7576420436603626
+family_prior,Pooled,0.7741644083107497
+family_prior,Within-family,0.5386828509134544
+ews_probe_mlp,Pooled,0.6732560128309653
+ews_probe_mlp,Sequence,0.8284939992257065
+ews_gru,Sequence,0.9083107497741644

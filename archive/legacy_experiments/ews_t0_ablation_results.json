@@ -1,0 +1,75 @@
+{
+  "h_0_linear": {
+    "pooled_auroc": 0.9157310620725255,
+    "family_aurocs": {
+      "arithmetic": 0.978021978021978,
+      "multi_step_arithmetic": 0.8482142857142857,
+      "syllogistic": 0.9310344827586207,
+      "relational": 0.9702797202797203,
+      "set_inclusion": 0.875,
+      "contradiction": 0.7261904761904762,
+      "variable_chain": 0.8214285714285714,
+      "multi_hop": 0.6
+    }
+  },
+  "z_0_linear": {
+    "pooled_auroc": 0.8633372048006195,
+    "family_aurocs": {
+      "arithmetic": 0.9230769230769231,
+      "multi_step_arithmetic": 0.7857142857142857,
+      "syllogistic": 0.9741379310344828,
+      "relational": 0.8111888111888111,
+      "set_inclusion": 0.8020833333333334,
+      "contradiction": 0.6428571428571429,
+      "variable_chain": 0.7857142857142857,
+      "multi_hop": 0.33636363636363636
+    }
+  },
+  "family_prior": {
+    "pooled_auroc": 0.7741644083107497,
+    "family_aurocs": {
+      "arithmetic": 0.4725274725274725,
+      "multi_step_arithmetic": 0.5625,
+      "syllogistic": 0.8362068965517241,
+      "relational": 0.6503496503496503,
+      "set_inclusion": 0.2916666666666667,
+      "contradiction": 0.35119047619047616,
+      "variable_chain": 0.6904761904761905,
+      "multi_hop": 0.45454545454545453
+    },
+    "family_failure_rates_train": {
+      "arithmetic": 0.4846153846153846,
+      "multi_step_arithmetic": 0.6701030927835051,
+      "syllogistic": 0.09448818897637795,
+      "relational": 0.3495575221238938,
+      "set_inclusion": 0.9090909090909091,
+      "contradiction": 0.7021276595744681,
+      "variable_chain": 0.6176470588235294,
+      "multi_hop": 0.4959349593495935
+    }
+  },
+  "notes": [
+    "If h_0 (or z_0) within-family AUROC is close to the full EWS model's within-family AUROC, the temporal GRU is inert and the signal is static answer commitment at the prompt encoding (Phase 2 decision).",
+    "h_0 pooled AUROC = 0.9157; compare to ews_results.json family_aurocs and sequence_auroc."
+  ],
+  "args": {
+    "runs_dir": "data/runs/gemma-2-2b/gemma-2-2b",
+    "benchmark": "data/prompts/benchmark_v2.json",
+    "layer": -1,
+    "min_gen_tokens": 4,
+    "max_gen_tokens": 64,
+    "test_fraction": 0.2,
+    "encoder_checkpoint": "ews_model2.pt",
+    "latent_dim": 128,
+    "probe_epochs": 400,
+    "probe_lr": 0.01,
+    "probe_weight_decay": 0.001,
+    "device": "cuda",
+    "output": "ews_t0_ablation_results.json",
+    "seed": 42
+  },
+  "n_train": 997,
+  "n_test": 249,
+  "n_correct": 612,
+  "n_incorrect": 634
+}

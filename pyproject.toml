@@ -1,0 +1,27 @@
+[project]
+name = "sdq"
+version = "0.1.0"
+description = "Leakage-resistant correctness probing and matched-control activation interventions in Gemma 2 2B"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.42.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+paper = ["matplotlib==3.10.6"]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["sdq*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: marks tests that require the model to be loaded (slow, needs GPU)",
+]

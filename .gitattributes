@@ -1,0 +1,8 @@
+# Keep source text portable without changing hashed experimental artifacts.
+* text=auto eol=lf
+*.json -text
+*.csv -text
+*.pt binary
+*.png binary
+*.safetensors binary
+*.tar.gz binary

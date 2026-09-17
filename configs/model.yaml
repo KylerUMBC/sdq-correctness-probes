@@ -1,0 +1,17 @@
+model:
+  name: "google/gemma-2-2b"
+  revision: "c5ebcd40d208330abc697524c919956e692655cf"
+  dtype: "bfloat16"
+  device: "cuda"
+  cache_dir: "./models/gemma 2 2B"
+
+inference:
+  seed: 42
+  max_new_tokens: 32
+  do_sample: false
+  temperature: 1.0
+  top_k: 1
+
+storage:
+  runs_dir: "./data/runs"
+  prompts_dir: "./data/prompts"

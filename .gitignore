@@ -1,0 +1,61 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Personal planning stays local; the public snapshot contains the research record.
+/notes/
+/archive/project_notes/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+
+# Venv
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+
+# Model cache (large files)
+models/gemma 2 2B/*
+!models/gemma 2 2B/.gitkeep
+
+# Run artifacts (large files)
+data/runs/*
+!data/runs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Transient resume checkpoints (self-deleted on successful runs)
+*.checkpoint.json
+*.checkpoint.json.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+
+.claude/
+*.tar.gz
+*.safetensors
+*.pt
+CLAUDE.md
+
+# Local audit-workbook build products
+.artifact_runtime/
+outputs/
+
+# Preserve the small historical probe artifacts, not other local checkpoints.
+!archive/commitment_direction.pt
+!archive/legacy_experiments/commitment_direction.pt

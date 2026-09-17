@@ -1,0 +1,5 @@
+layer,best_directed_flip_rate,directional_evidence,best_ratio,best_magnitude_std,summary
+6,0.075,No clean directional edge,Random logit shift larger,not archived,"Most flips, but not direction-specific"
+13,0.05,6.67x directed/random,6.67x,1x,Best narrow directional signal
+19,0.06666666666666667,No subspace specificity,mean in/random = 1.06x,0.34-0.86,All conditions cluster near 6%
+25,0.0,No effect,0.00x,all tested,Late residual stream is frozen
